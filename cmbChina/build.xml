@@ -1,0 +1,29 @@
+<project name="project" default="">
+    <property file="application.properties"/>
+    <property name="projectHome" value="."/>
+
+    <target name="build-ci" depends="deploy-cmbChina,restart-cmbChina"/>
+
+	<!--
+    <target name="up" description="UPDATE Html">
+        <sshexec host="${server.cmbChina.ip}" username="root" port="${server.cmbChina.port}" keyfile="${server.keyfile}"
+                 command="${server.cmbChina.up}" failonerror="false"/>
+    </target>
+	-->
+    <target name="deploy-cmbChina" description="--> The deploy target (cmbChina Env)">
+        <sshexec host="${server.cmbChina.ip}" username="${server.username}" trust="true" port="${server.cmbChina.port}"
+                 keyfile="${server.keyfile}" command="${server.cmbChina.rsync}" />
+    </target>
+	
+    <target name="restart-cmbChina" description="Restart Server">
+        <sshexec host="${server.cmbChina.ip}" username="root" port="${server.cmbChina.port}" keyfile="${server.keyfile}"
+                 command="${server.cmbChina.restart}" failonerror="false"/>
+    </target>
+
+</project>
+
+
+
+
+
+

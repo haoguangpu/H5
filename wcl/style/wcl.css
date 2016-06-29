@@ -1,0 +1,179 @@
+/* global */
+body{font-family:verdana}
+
+a,span,div,p,ul,li,ol,b{-webkit-user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+.xy_c{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);position:absolute;}
+
+.swiper-slide{position:relative;overflow:auto;width:100%;height:100%;background:#fff;}
+.power-scroll-container .swiper-slide>.slide-wrapper{overflow:hidden;}
+.power-scroll-container .ui-up-arrow{margin-bottom:25px;}
+.abs{position:absolute;}
+
+.delay_100ms{ -webkit-animation-delay:100ms; animation-delay:100ms;}
+.delay_200ms{ -webkit-animation-delay:200ms; animation-delay:200ms;}
+.delay_300ms{ -webkit-animation-delay:300ms; animation-delay:300ms;}
+.delay_400ms{ -webkit-animation-delay:400ms; animation-delay:400ms;}
+.delay_500ms{ -webkit-animation-delay:500ms; animation-delay:500ms;}
+.delay_600ms{ -webkit-animation-delay:600ms; animation-delay:600ms;}
+.delay_700ms{ -webkit-animation-delay:700ms; animation-delay:700ms;}
+.delay_800ms{ -webkit-animation-delay:800ms; animation-delay:800ms;}
+.delay_900ms{ -webkit-animation-delay:900ms; animation-delay:900ms;}
+.delay_1s{ -webkit-animation-delay:1s; animation-delay:1s; }
+.delay_1100ms{ -webkit-animation-delay:1.1s; animation-delay:1.1s;}
+.delay_1200ms{ -webkit-animation-delay:1.2s; animation-delay:1.2s;}
+.delay_1300ms{ -webkit-animation-delay:1.3s; animation-delay:1.3s;}
+.delay_1400ms{ -webkit-animation-delay:1.4s; animation-delay:1.4s;}
+.delay_1500ms{ -webkit-animation-delay:1.5s; animation-delay:1.5s;}
+.delay_1600ms{ -webkit-animation-delay:1.6s; animation-delay:1.6s;}
+.delay_1700ms{ -webkit-animation-delay:1.7s; animation-delay:1.7s;}
+.delay_1800ms{ -webkit-animation-delay:1.8s; animation-delay:1.8s;}
+.delay_1900ms{ -webkit-animation-delay:1.9s; animation-delay:1.9s;}
+.delay_2s{ -webkit-animation-delay:2s; animation-delay:2s; }
+.delay_2_2s{ -webkit-animation-delay:2.2s; animation-delay:2.2s; }
+.delay_2300ms{ -webkit-animation-delay:2.3s; animation-delay:2.3s;}
+.delay_2400ms{ -webkit-animation-delay:2.4s; animation-delay:2.4s;}
+.delay_2500ms{ -webkit-animation-delay:2.5s; animation-delay:2.5s;}
+.delay_2700ms{ -webkit-animation-delay:2.7s; animation-delay:2.7s;}
+.delay_3s{ -webkit-animation-delay:3s; animation-delay:3s; }
+.delay_5s{ -webkit-animation-delay:5s; animation-delay:5s; }
+
+
+.logo{padding:40px 0 0;text-align:center;}
+
+
+.page-index{width:640px;overflow:hidden;}
+.index-content{position:relative;z-index:2;background:url("../images/indexBg.png") 0 0 no-repeat;background-size:100% 70%;height:100%;overflow:hidden;width:100%;}
+.index-bottom{position:absolute;bottom:0;height:38%;width:130%;left:-15%;overflow:hidden;z-index:1;}
+.index-bottom-inner{background:#fff;border-radius:100% 100% 0 0;overflow:hidden;width:100%;height:100%;position:relative;z-index:1;}
+.index-bottom .shadow{box-shadow:5px 0 15px 0 rgba(0,0,0,.5) inset;border-radius:100% 100% 0 0;position:absolute;z-index:2;width:100%;height:100%;}
+.bgmaps {position:absolute;width:100%;height:100%;top:0;left:0;z-index:1;border-radius:100% 100% 0 0;}
+.bgmaps img{width:100%;}
+
+.index-txts{color:#f5f5f5;font-size:24px;line-height:150%;margin:-80px 80px 0 110px;}
+.index-txts .dots{background:url("../images/iconsDot.png") -12px -7px no-repeat;padding-left:25px;}
+
+.page-salary{background:#e6eef0;}
+.salary-bg{position:absolute;z-index:1;width:100%;height:100%;background:url("../images/salaryBg.png") 50% 120% no-repeat;}
+.salary-content{position:relative;z-index:2;height:100%;}
+.salary-info .rote{bottom:90px;left:20%;}
+.salary-info .develop{left:110px;bottom:225px;}
+.salary-info .pay{left:240px;bottom:225px;}
+.salary-info .welcare{left:320px;bottom:225px;}
+.salary-info .txt{background:rgba(255,255,255,.6);padding:10px;border-radius:15px;}
+.develop .txt{left:-20px;bottom:80px;}
+.pay .txt{left:190px;top:20px;}
+.welcare .txt{left:70px;bottom:-10px;}
+
+.arrow-up-s2{background:url("../images/salaryArrowBg.png") 0 0 repeat-x;background-size:auto 100%;position:absolute;left:0;bottom:0;width:100%;height:85px;z-index:1;}
+
+.office-list-box{}
+
+.view-list{width:100%;height:551px;}
+.view-list li{float:left;width:640px;position:relative;}
+.view-list span{position:absolute;right:15px;bottom:0;color:#a1a1a1;font-size:24px;}
+
+.tumb-list{width:175%;background:#a1a1a1;padding:15px 0;margin:15px 0;}
+.tumb-list li{float:left;width:160px;text-align:center;position:relative;
+    -webkit-animation-name: qqflash;
+    animation-name: qqflash;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.tumb-list .current::after{content:"\20";border:solid 15px transparent;border-bottom-color:#a1a1a1;position:absolute;top:-45px;left:50%;margin-left:-15px;}
+
+.page-events{background:url("../images/portBg.jpg") 50% 50% no-repeat;background-size:100% 100%}
+.page-events .logo{padding:20px 0 0;}
+.port-pic-box{margin:-80px 0 0;position:relative;}
+.photo-avatar {position:absolute;left:0;top:81px;width:313px;height:500px;background:url("../images/portPic01.png");background-size:100% 100%;z-index:3;}
+.port-pic-box .picbg{position:relative;z-index:2;}
+.port-pic-box .line{width:200px;height:100px;display:block;position:absolute;z-index:1;}
+
+.port-pic-thumb{position:absolute;width:50%;height:100%;top:0;right:0;z-index:3;}
+.port-pic-thumb li{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.port-pic-thumb .avatar{width:72px;height:72px;background:url("../images/portTumbOff01.png") 50% 50% no-repeat;background-size:100% auto;display:block;position:absolute;}
+.port-pic-thumb .club .avatar{top:5px;right:195px; background-image : url("../images/portTumbOff01.png");}
+.port-pic-thumb .meeting .avatar{top:128px;right:84px;background-image : url("../images/portTumbOff02.png");}
+.port-pic-thumb .game .avatar{top:295px;right:35px;background-image : url("../images/portTumbOff03.png");}
+.port-pic-thumb .care .avatar{bottom:172px;right:83px;background-image : url("../images/portTumbOff04.png");}
+.port-pic-thumb .jump .avatar{bottom:50px;right:196px;background-image : url("../images/portTumbOff05.png");}
+
+
+.port-pic-thumb .title{display:block;position:absolute;color:#454545;line-height:150%;}
+.port-pic-thumb .title b{display:block;font-size:24px;}
+.port-pic-thumb .club .title{top:20px;right:100px;}
+.port-pic-thumb .meeting .title{top:220px;right:55px;}
+.port-pic-thumb .game .title{top:385px;right:35px;}
+.port-pic-thumb .care .title{bottom:105px;right:43px;}
+.port-pic-thumb .jump .title{bottom:-10px;right:180px;}
+
+.port-club .club .avatar{ background-image : url("../images/portTumb01.png");}
+.port-club .club .title{color:#e01e62;}
+.port-club .photo-avatar{ background-image : url("../images/portPic01.png");}
+.port-club .line{background:url("../images/portLine1.png") 50% 50% no-repeat;top:13px;right:255px;}
+
+.port-meeting .meeting .avatar{ background-image : url("../images/portTumb02.png");}
+.port-meeting .meeting .title{color:#6a811c;}
+.port-meeting .photo-avatar{ background-image : url("../images/portPic02.png");}
+.port-meeting .line{background:url("../images/portLine2.png") 50% 50% no-repeat;top:161px;right:151px;width:210px;height:39px;}
+
+.port-game .game .avatar{ background-image : url("../images/portTumb03.png");}
+.port-game .game .title{color:#a49500;}
+.port-game .photo-avatar{ background-image : url("../images/portPic03.png");}
+.port-game .line{background:url("../images/portLine3.png") 50% 50% no-repeat;top:295px;right:101px;width:221px;height:31px;}
+
+.port-care .care .avatar{ background-image : url("../images/portTumb04.png");}
+.port-care .care .title{color:#e97222;}
+.port-care .photo-avatar{ background-image : url("../images/portPic04.png");}
+.port-care .line{background:url("../images/portLine4.png") 50% 50% no-repeat;top:436px;right:151px;width:195px;height:76px;}
+
+.port-jump .jump .avatar{ background-image : url("../images/portTumb05.png");}
+.port-jump .jump .title{color:#e24224;}
+.port-jump .photo-avatar{ background-image : url("../images/portPic05.png");}
+.port-jump .line{background:url("../images/portLine5.png") 50% 50% no-repeat;bottom:79px;right:195px;width:238px;height:82px;}
+
+.page-join{background:url("../images/endBg.jpg") 0 0 no-repeat #2d404f;}
+.page-join .logo{margin-bottom:-20px;}
+.welcome-info{text-align:center;color:#fff;margin-top:-100px;position:relative;z-index:2;}
+.welcome-info .welcome{font-size:38px;margin:0 0 50px;}
+.welcome-info .txt{font-size:30px;margin:25px 0}
+.welcome-info .icon{margin:-35px 0;}
+.swiper-slide .welcome-info .btn-join{border-radius:100px;background:#fff;display:inline-block;padding:10px 50px;color:#5e5e5e;font-size:30px;width:auto;height:auto;}
+.end-img{position:absolute;left:0;width:100%;z-index:1;}
+.end-bottom{bottom:0;overflow:hidden;}
+.end-top{top:0;}
+
+/* iPhone 3  */
+@media only screen
+and (device-width : 320px)
+and (device-height : 480px){
+    .salary-bg{background-position:60% 125%;}
+}
+
+@media only screen
+and (device-width : 320px)
+and (device-height : 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .salary-bg{background-position:60% -15%;}
+}
+
+/* iPhone 6  */
+@media only screen
+and (device-width : 375px)
+and (device-height : 667px){ }
+
+/* iPhone 6 plus  */
+@media only screen
+and (device-width : 414px)
+and (device-height : 736px){
+    .salary-bg{background-position:60% 145%;}
+}
+
+/* iPhone 5 */
+@media only screen
+and (device-width : 320px)
+and (device-height : 568px){
+}

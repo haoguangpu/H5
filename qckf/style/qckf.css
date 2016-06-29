@@ -1,0 +1,252 @@
+
+*{
+	margin:0;
+	padding: 0;
+}
+body,html,.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.page1{
+	position: relative;
+	
+}
+.p1logo{
+	position: absolute;
+    left: 15px;
+    top: 15px;
+    margin: 0;
+}
+.logoimg{
+	width: 80%;
+}
+.p1musle{
+	width: 64px;
+	height:64px;
+	position: absolute;
+    right: 2px;
+    top: 2px;
+    margin: 0;
+	background-image: url("../images/musicBtn.png");
+	background-size: 100% 100%;
+	animation: rotateArrow 5s infinite linear ;
+}
+.p1con{
+	width: 100%;
+	height:50%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+.p1conimg{
+	width: 100%;
+}
+.p1conimg1{
+	display: block;
+	position: absolute;
+	top:45%;
+	left:10%;
+	width: 80%;
+	animation: scaleArrow 1s infinite ease-in-out;
+}
+.p1conimg2{
+	display: block;
+	position: absolute;
+	bottom:0%;
+	left:0%;
+	width: 100%;
+	animation: rightArrow 8s infinite linear ;
+}
+.p1conimg4{
+	display: block;
+	position: absolute;
+	bottom:0%;
+	left:0%;
+	width: 100%;
+	animation: rightArrow2 8s infinite linear ;
+}
+.p1conimg3{
+	display: block;
+	position: absolute;
+	bottom:10%;
+	left:47.5%;
+	width: 5%;
+	animation: upArrow 0.5s infinite ease-in-out;
+}
+@keyframes upArrow{
+	0%{transform: translateY(80%)}
+	100%{transform:translateY(0%)}
+}
+@keyframes scaleArrow{
+	0%{transform: scale(0.9);}
+	50%{transform: scale(1)}
+	100%{transform: scale(0.9);}
+}
+@keyframes rightArrow{
+	0%{transform: translateX(-100%)}
+	100%{transform: translateX(0%);}
+}
+@keyframes rightArrow2{
+	0%{transform: translateX(0%)}
+	100%{transform: translateX(100%);}
+}
+@keyframes rotateArrow{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(360deg);}
+}
+.page2{
+	width: 100%;
+	height: 100%;
+	background: #fe657a;
+	position: relative;
+}
+.p2i1{
+	position: absolute;
+	width: 18%;
+	left: 10%;
+	top:0%;
+	z-index: 5;
+}
+.p2i2{
+	position: absolute;
+	width: 18%;
+	left: 8%;
+	top:2%;
+	z-index: 5;
+}
+
+.p2i3{
+	position: absolute;
+	width: 18%;
+	left: 4%;
+	top:2%;
+	z-index: 5;
+}
+
+.p2i4{
+	position: absolute;
+	width: 18%;
+	left: 2%;
+	top:2%;
+	z-index: 5;
+}
+.p2i5{
+	position: absolute;
+	width: 80%;
+	right:0;
+	top:10%;
+}
+.p2i6{
+	position: absolute;
+	width: 100%;
+	right:-18%;
+	top:-4%;
+}
+.p2i7{
+	position: absolute;
+	width: 100%;
+	right:-10%;
+	top:-6%;
+	z-index: 5;
+}
+.p2i8{
+	position: absolute;
+	width: 14%;
+	right:2%;
+	bottom:4%;
+	z-index: 5;
+}
+.p2i9{
+	position: absolute;
+	width: 15%;
+	right:3%;
+	bottom:25%;
+	z-index: 5;
+}
+.p2i10{
+	position: absolute;
+	width: 10%;
+	right:12%;
+	bottom:8%;
+	z-index: 5;
+}
+.page3{
+	background-color: #09bee3;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.page4{
+	background-color: cornflowerblue;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.p4i1{
+	width: 40%;
+	position: absolute;
+	left:30%;
+	top:2%;
+}
+.p4i2{
+	width: 1%;
+	position: absolute;
+	left:50%;
+	top:30%;
+}
+.p4i3{
+	width: 100%;
+	position: absolute;
+	left:5%;
+	top:43%;
+	z-index: 5;
+}
+.p4i4{
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:44%;
+	z-index: 5;
+}
+.p4i5{
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:45%;
+	z-index: 5;
+}
+.p4i6{
+	width: 100%;
+	position: absolute;
+	left:10%;
+	top:46%;
+	z-index: 5;
+}
+.p4i7{
+	width: 100%;
+	position: absolute;
+	left:10%;
+	top:47%;
+	z-index: 5;
+}
+.p4i8{
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:48%;
+	z-index: 5;
+}
+.p4i9{
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:49%;
+	z-index: 5;
+}
+.p4i10{
+	width: 100%;
+	position: absolute;
+	left:10%;
+	top:50%;
+	z-index: 5;
+}

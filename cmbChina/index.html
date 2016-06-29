@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="ui-viewport-640 mobile ks-webkit600 ks-webkit" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>招行I转角，遇见Ta</title>
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <script src="script/jquery-1.8.2.js"></script>
+    <link href="style/aio.min.css" rel="stylesheet" type="text/css">
+    <link href="style/animate.min.css" rel="stylesheet" type="text/css">
+    <script src="style/aio.min.js"></script>
+    <link href="style/cmbChina.css" rel="stylesheet" type="text/css">
+    <script src="style/wei-user.js"></script>
+
+    <script>
+        //获取浏览器页面可见高度和宽度
+        var _PageHeight = document.documentElement.clientHeight,
+                _PageWidth = document.documentElement.clientWidth;
+        //计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+        var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+                _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+        //在页面未加载完毕之前显示的loading Html自定义内容
+        var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:100%;px;top:0;background:#fff;z-index:10000;"><div class="login_inner" style=" top:' + _LoadingTop + 'px;"></div></div>';
+        //呈现loading效果
+        document.write(_LoadingHtml);
+
+        window.onload = function () {
+            var loadingMask = document.getElementById('loadingDiv');
+            loadingMask.parentNode.removeChild(loadingMask);
+        };
+
+        //监听加载状态改变
+        document.onreadystatechange = completeLoading;
+
+        //加载状态为complete时移除loading效果
+        function completeLoading() {
+//            if (document.readyState == "complete") {
+//                var loadingMask = document.getElementById('loadingDiv');
+//                loadingMask.parentNode.removeChild(loadingMask);
+//            }
+        }
+    </script>
+</head>
+<body>
+<img src="images/avatar.jpg" alt="" style="opacity: 0;position:absolute;"/>
+<!-- container -->
+<div class="container">
+    <div class="content">
+        <div class="content-body">
+            <div class="ui-loading js-loading" style="display: none;">
+                <i class="fa fa-circle-o-notch fa-spin- fa-3x">
+                </i>
+            </div>
+            <div class="music_btn active"></div>
+            <div class="power-scroll-container js-power-scroll-container" style="">
+                <div class="swiper-container js-power-scroll" data-options="{&quot;hashNav&quot;:false,&quot;mode&quot;:&quot;vertical&quot;,&quot;loop&quot;:false,&quot;shadow&quot;:true}">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide page_index" data-hash="index" style="">
+                            <div class="slide-wrapper ">
+                                <div class="index-txt">
+                                    <img src="images/indexTxt.png" alt="" class="fadeIn animated delay_400ms" />
+                                    <span class="flowers f01 abs"> <img src="images/indexFlowers01.png" alt="" class="zoomIn animated delay_700ms" /> </span>
+                                    <span class="flowers f02 abs"> <img src="images/indexFlowers02.png" alt="" class="zoomIn animated delay_1s"/> </span>
+                                </div>
+                                <div class="index-flight zoomInDown animated delay_1s">
+                                    <img src="images/indexFlight.png" alt="" class="qqpulse animated infinite" />
+                                </div>
+                                <div class="index-element abs zoomIn animated delay_900ms">
+                                    <img src="images/indexElements.png" alt="" class=" qqpulse animated infinite delay_400ms" />
+                                </div>
+                                <div class="index-cloud abs zoomIn animated delay_900ms">
+                                    <img src="images/indexCloud.png" alt="" class=" qqpulse animated infinite delay_800ms" />
+                                </div>
+                                <div class="index-stars abs zoomIn animated delay_900ms">
+                                    <img src="images/indexStars.png" alt="" class=" qqpulse animated infinite delay_1200ms" />
+                                </div>
+                                <div class="index-building abs fadeIn animated">
+                                    <img src="images/indexBuilding.png" alt="" />
+                                </div>
+                                <div class="ui-up-arrow" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-was" data-hash="was" style="">
+                            <div class="slide-wrapper ">
+                                <div class="was-bg abs fadeIn animated"></div>
+                                <div class="was-line abs starRun animated delay_500ms">
+                                    <!--<img src="images/wasStar.png" alt="" class="fadeIn delay_300ms animated" />-->
+                                </div>
+                                <div class="xy_c">
+                                    <div class="was-it was-txt"> <img src="images/wasIT.png" alt="" class="fadeIn animated delay_400ms" /> </div>
+                                    <div class="was-farm was-txt"> <img src="images/wasFarm.png" alt="" class="fadeIn animated delay_800ms" /> </div>
+                                </div>
+                                <div class="ui-up-arrow" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-early" data-hash="early" style="">
+                            <div class="slide-wrapper ">
+                                <div class="early-bg fadeIn animated"><img src="images/earlyBg.jpg" /></div>
+                                <div class="block-page block-early-wrap fadeOut animated delay_3s abs">
+                                    <h4 class="title abs fadeIn animated delay_1s"><img  src="images/earlyTitle.png" /> </h4>
+                                    <div class="b-build abs early-build "><img src="images/earlyBuilding.png" class="fadeIn animated delay_500ms" /></div>
+                                </div>
+                                <div class="block-page block-lastbus-wrap fadeOut animated delay_6s">
+                                    <h4 class="title abs fadeIn animated fadeIn animated delay_4s "><img  src="images/lastBusTitle.png" /> </h4>
+                                    <div class="b-build last-bus-station abs"><img src="images/lastBusStation.png" class="fadeIn animated delay_3600ms" /></div>
+                                    <div class="bus-avatar abs bounceInRight animated delay_4s"><img src="images/lastBusAvatar.png" /></div>
+                                    <div class="last-bus abs busmove animated delay_3900ms"><img src="images/bus.png" /></div>
+                                </div>
+                                <div class="block-page block-where-wrap">
+                                    <div class="where-bg abs  fadeIn animated delay_6500ms"><img src="images/myTeamBg.jpg" class="" /></div>
+                                    <div class="where-wall abs fadeIn animated delay_6500ms"><img src="images/myTeamWall.png" /></div>
+                                    <div class="where-txt abs fadeIn animated delay_9200ms"><img src="images/myteamWhereTxt.png" /></div>
+                                    <div class="where-myteam abs ">
+                                        <div class="zoomIn animated delay_7500ms"><img src="images/myTeamTxt.png" /></div>
+                                        <div class="zoomIn animated delay_7900ms"><img src="images/myTeamTxt01.png" /></div>
+                                        <div class="zoomIn animated delay_8400ms"><img src="images/myTeamTxt02.png" /></div>
+                                        <div class="zoomIn animated delay_8800ms"><img src="images/myTeamTxt03.png" /></div>
+                                    </div>
+                                    <div class="where-avatar abs fadeIn animated delay_7000ms"><img src="images/myTeamAvatar.png" /></div>
+
+                                </div>
+                                <div class="ui-up-arrow fadeIn animated delay_7500ms" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-light" data-hash="light" style="">
+                            <div class="slide-wrapper ">
+                                <div class="light-btn abs"><img src="images/lightOff.png" /></div>
+                                <div class="light-btn light-btn-on abs"><img src="images/lightOn.png" /></div>
+                                <div class="light-page light-off abs">
+                                    <div class="light-bg abs"><img src="images/lightOffBg.jpg" /></div>
+                                    <div class="light-title abs bounceInDown animated"><img src="images/cornerTitle.png" /></div>
+                                    <div class="light-click-guide abs fadeIn animated delay_800ms"><img src="images/clickGuide.png" class="qqpulse animated infinite" /></div>
+                                    <div class="light-off-wall abs"><img src="images/cornerWall.png" /></div>
+                                </div>
+                                <div class="light-page light-on abs">
+                                    <div class="light-bg abs "><img src="images/lightOnBg.jpg" class="fadeIn animated delay_1s" /></div>
+                                    <div class="light-flowers abs fadeIn animated delay_1s"><img src="images/lightFlowers.png" /></div>
+                                    <div class="light-knowyou abs fadeIn animated delay_500ms"><img src="images/weKnowYou.png" /></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-foot page-about" data-hash="foot">
+                            <div class="slide-wrapper ">
+                                <div class="foot-city fadeIn animated delay_500ms"><img src="images/footCity.jpg" /></div>
+                                <div class="foot-avatar zoomIn animated  delay_500ms"><img src="images/footAvatar.png" /></div>
+                                <div class="foot-ta fadeOut animated delay_1500ms"><img src="images/footTa.png" class="bounceInLeft animated " /></div>
+                                <div class="foot-txt zoomIn animated delay_2s "><img src="images/footTx.png" /></div>
+                                <div class="ui-up-arrow" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-run" data-hash="run" style="">
+                            <div class="slide-wrapper ">
+                                <div class="run-avatar zoomIn animated delay_500ms "><img src="images/runAvatar.png" /></div>
+                                <div class="run-ta fadeOut animated delay_1500ms"><img src="images/runTa.png" class="bounceInLeft animated" /></div>
+                                <div class="run-txt zoomIn animated delay_2s "><img src="images/runTxt.png" /></div>
+                                <div class="ui-up-arrow" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-salary " data-hash="salary" style="">
+                            <div class="slide-wrapper ">
+                                <div class="salary-city fadeIn animated delay_500ms"><img src="images/salaryBg.png" /></div>
+                                <div class="salary-avatar abs fadeIn animated delay_800ms "><img src="images/salaryAvatar.png" /></div>
+                                <div class="salary-ta  fadeOut animated delay_1500ms"><img src="images/salaryTa.png" class=" bounceInLeft animated" /></div>
+                                <div class="salary-txt zoomIn animated delay_2s "><img src="images/salaryTxt.png" /></div>
+                                <div class="ui-up-arrow" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-intro " data-hash="intro" style="">
+                            <div class="slide-wrapper ">
+                                <div class="intro-logo">
+                                    <img src="images/introLogo.png" alt="" />
+                                </div>
+                                <div class="intro-txt">
+                                    <div class="intro-txt-inner">
+                                        <p>招商银行是世界500强企业，也是我国第一家完全有企业法人持股的股份制商业银行。</p>
+                                        <p>招银网络科技（简称招银科技）是招商银行的全资子公司，致力于为招商银行全球化发展提供强有力的软件开发及技术支持。公司以成为中国银行业最强大脑为己任，在彼此信任和尊重的基础上，追求高标准的交付和价值创造。现有深圳、杭州两家分支机构，共同担负着招商银行电子信息化的重任。</p>
+                                        <p>这里是中国最具活力的银行，这里是中国最优秀的金融IT团队之一。如果您足够优秀，那么这里将会是您智慧闪光、价值实现和梦想腾飞的舞台，我们热忱期待您的加盟。</p>
+                                    </div>
+                                </div>
+                                <div class="abs intro-flower"><img src="images/introFlowers.png" class="qqpulse animated infinite" /></div>
+                                <div class="abs intro-avatar"><img src="images/introAvatar.png" /></div>
+                                <div class="abs intro-star"><img src="images/introStar.png" class="qqflash animated infinite" /></div>
+                                <div class="abs intro-cloudy"><img src="images/introCloudy.png" /></div>
+                                <div class="ui-up-arrow" style="display: block;padding:0 0 5%;">
+                                    <a href="javascript:">
+                                        <img src="images/arrow-up.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-end " data-hash="end" style="">
+                            <div class="slide-wrapper ">
+                                <div class="end-logo fadeIn animated"><img src="images/endLogo.png" /></div>
+                                <div class="end-txt bounceInDown animated delay_600ms"><img src="images/endTxt.png" /></div>
+                                <div class="end-mail bounceInDown animated delay_700ms"><img src="images/endMail.png" /></div>
+                                <div class="end-clickguide bounceInDown animated delay_800ms"><img src="images/endClickGuide.png"  /></div>
+                                <a href="http://mp.weixin.qq.com/s?__biz=MzAxMzU0NTAwNg==&mid=213225047&idx=1&sn=39477a33f09d3aa9872540c79ac272ef#rd" class="end-avatar zoomInDown animated delay_900ms"><img src="images/endAvatar.png" class="qqshakeLarge animated infinite"/></a>
+                                <div class="end-cloudys abs fadeIn animated delay_1100ms"><img src="images/endCloudys.png" class="qqpulse animated infinite delay_200ms"/></div>
+                                <div class="end-bottom-txt abs bounceInDown animated delay_1s"><img src="images/endBottomTxt.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="landscape_notice">
+    <div class="text-center font-size-28 c-white">
+        <i class="fa fa-4x fa-mobile"></i><br><span>请将屏幕竖向浏览</span>
+    </div>
+</div>
+<script>
+    (new MobileSlider()).init();
+</script>
+<script>
+    $(".light-btn").on("click", function() {
+        $(".light-btn-on").fadeIn()
+        $(".light-off").fadeOut(function() {
+        })
+        $(".light-on").fadeIn()
+    })
+    function loadMp3 (src) {
+//        alert(src)
+//        if(!app.getUa.weixin && app.getUa.android){
+//            $('<audio preload><source src="'+src+'" /></audio>').appendTo('body');//.on('canplaythrough', setMp3);
+//        }
+//        else{
+        $('<audio loop preload><source src="'+src+'" /></audio>').appendTo('body');//.on('canplaythrough', setMp3);
+//        }
+        setMp3();
+    }
+
+    function setMp3 () {
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                $('audio')[0].play();
+            });
+        }, false);
+        $('audio')[0].play();
+        $('.music_btn').on('click', playOrPaused);
+    }
+    loadMp3("images/music.mp3")
+
+    function playOrPaused(){
+        $('.music_btn').removeClass('active');
+        setTimeout(function () {
+            $('.music_btn').addClass('active')
+        }, 0)
+        var audio = $('audio')[0];
+        var _this = $(this);
+        if(audio.paused){
+            _this.removeClass('off');
+            audio.play();
+            return;
+        }
+        _this.addClass('off');
+        audio.pause();
+    }
+</script>
+</body>
+</html>

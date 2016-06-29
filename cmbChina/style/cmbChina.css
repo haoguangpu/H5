@@ -1,0 +1,232 @@
+/* global */
+body{font-family:verdana,"MicroSoft YaHei"}
+img{vertical-align:top;}
+a,span,div,p,ul,li,ol,b{-webkit-user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+.xy_c{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);position:absolute;}
+.abs{position:absolute;}
+.swiper-slide{position:relative;overflow:hidden;width:100%;height:100%;}
+
+.music_btn{position:absolute;background:url("../images/musicBtn.png") 50% 50% no-repeat;padding:50px;z-index: 99999;right:0;top:0;}
+.music_btn.off{background-image:url("../images/musicBtnOff.png")}
+
+.delay_100ms{ -webkit-animation-delay:100ms; animation-delay:100ms; }
+.delay_200ms{ -webkit-animation-delay:200ms; animation-delay:200ms; }
+.delay_300ms{ -webkit-animation-delay:300ms; animation-delay:300ms; }
+.delay_400ms{ -webkit-animation-delay:400ms; animation-delay:400ms; }
+.delay_500ms{ -webkit-animation-delay:500ms; animation-delay:500ms; }
+.delay_600ms{ -webkit-animation-delay:600ms; animation-delay:600ms; }
+.delay_700ms{ -webkit-animation-delay:700ms; animation-delay:700ms; }
+.delay_800ms{ -webkit-animation-delay:800ms; animation-delay:800ms; }
+.delay_900ms{ -webkit-animation-delay:900ms; animation-delay:900ms; }
+.delay_1s{ -webkit-animation-delay:1s; animation-delay:1s; }
+.delay_1100ms{ -webkit-animation-delay:1.1s; animation-delay:1.1s; }
+.delay_1200ms{ -webkit-animation-delay:1.2s; animation-delay:1.2s; }
+.delay_1300ms{ -webkit-animation-delay:1.3s; animation-delay:1.3s; }
+.delay_1400ms{ -webkit-animation-delay:1.4s; animation-delay:1.4s; }
+.delay_1500ms{ -webkit-animation-delay:1.5s; animation-delay:1.5s; }
+.delay_1600ms{ -webkit-animation-delay:1.6s; animation-delay:1.6s; }
+.delay_1700ms{ -webkit-animation-delay:1.7s; animation-delay:1.7s; }
+.delay_1800ms{ -webkit-animation-delay:1.8s; animation-delay:1.8s; }
+.delay_1900ms{ -webkit-animation-delay:1.9s; animation-delay:1.9s; }
+.delay_2s{ -webkit-animation-delay:2s; animation-delay:2s; }
+.delay_2100ms{ -webkit-animation-delay:2.1s; animation-delay:2.1s; }
+.delay_2200ms{ -webkit-animation-delay:2.2s; animation-delay:2.2s; }
+.delay_2300ms{ -webkit-animation-delay:2.3s; animation-delay:2.3s; }
+.delay_2400ms{ -webkit-animation-delay:2.4s; animation-delay:2.4s; }
+.delay_2500ms{ -webkit-animation-delay:2.5s; animation-delay:2.5s; }
+.delay_2600ms{ -webkit-animation-delay:2.6s; animation-delay:2.6s; }
+.delay_2700ms{ -webkit-animation-delay:2.7s; animation-delay:2.7s; }
+.delay_2800ms{ -webkit-animation-delay:2.8s; animation-delay:2.8s; }
+.delay_2900ms{ -webkit-animation-delay:2.9s; animation-delay:2.9s; }
+.delay_3s{ -webkit-animation-delay:3s; animation-delay:3s; }
+.delay_3100ms{ -webkit-animation-delay:3.1s; animation-delay:3.1s; }
+.delay_3200ms{ -webkit-animation-delay:3.2s; animation-delay:3.2s; }
+.delay_3300ms{ -webkit-animation-delay:3.3s; animation-delay:3.3s; }
+.delay_3400ms{ -webkit-animation-delay:3.4s; animation-delay:3.4s; }
+.delay_3500ms{ -webkit-animation-delay:3.5s; animation-delay:3.5s; }
+.delay_3600ms{ -webkit-animation-delay:3.6s; animation-delay:3.6s; }
+.delay_3700ms{ -webkit-animation-delay:3.7s; animation-delay:3.7s; }
+.delay_3800ms{ -webkit-animation-delay:3.8s; animation-delay:3.8s; }
+.delay_3900ms{ -webkit-animation-delay:3.9s; animation-delay:3.9s; }
+.delay_4s{ -webkit-animation-delay:4s; animation-delay:4s; }
+.delay_4100ms{ -webkit-animation-delay:4.1s; animation-delay:4.1s; }
+.delay_4200ms{ -webkit-animation-delay:4.2s; animation-delay:4.2s; }
+.delay_4300ms{ -webkit-animation-delay:4.3s; animation-delay:4.3s; }
+.delay_4400ms{ -webkit-animation-delay:4.4s; animation-delay:4.4s; }
+.delay_4500ms{ -webkit-animation-delay:4.5s; animation-delay:4.5s; }
+.delay_4600ms{ -webkit-animation-delay:4.6s; animation-delay:4.6s; }
+.delay_4700ms{ -webkit-animation-delay:4.7s; animation-delay:4.7s; }
+.delay_4800ms{ -webkit-animation-delay:4.8s; animation-delay:4.8s; }
+.delay_4900ms{ -webkit-animation-delay:4.9s; animation-delay:4.9s; }
+.delay_5s{ -webkit-animation-delay:5s; animation-delay:5s; }
+.delay_5100ms{ -webkit-animation-delay:5.1s; animation-delay:5.1s; }
+.delay_5200ms{ -webkit-animation-delay:5.2s; animation-delay:5.2s; }
+.delay_5300ms{ -webkit-animation-delay:5.3s; animation-delay:5.3s; }
+.delay_5400ms{ -webkit-animation-delay:5.4s; animation-delay:5.4s; }
+.delay_5500ms{ -webkit-animation-delay:5.5s; animation-delay:5.5s; }
+.delay_5600ms{ -webkit-animation-delay:5.6s; animation-delay:5.6s; }
+.delay_5700ms{ -webkit-animation-delay:5.7s; animation-delay:5.7s; }
+.delay_5800ms{ -webkit-animation-delay:5.8s; animation-delay:5.8s; }
+.delay_5900ms{ -webkit-animation-delay:5.9s; animation-delay:5.9s; }
+.delay_6s{ -webkit-animation-delay:6s; animation-delay:6s; }
+.delay_6100ms{ -webkit-animation-delay:6.1s; animation-delay:6.1s; }
+.delay_6200ms{ -webkit-animation-delay:6.2s; animation-delay:6.2s; }
+.delay_6300ms{ -webkit-animation-delay:6.3s; animation-delay:6.3s; }
+.delay_6400ms{ -webkit-animation-delay:6.4s; animation-delay:6.4s; }
+.delay_6500ms{ -webkit-animation-delay:6.5s; animation-delay:6.5s; }
+.delay_6600ms{ -webkit-animation-delay:6.6s; animation-delay:6.6s; }
+.delay_6700ms{ -webkit-animation-delay:6.7s; animation-delay:6.7s; }
+.delay_6800ms{ -webkit-animation-delay:6.8s; animation-delay:6.8s; }
+.delay_6900ms{ -webkit-animation-delay:6.9s; animation-delay:6.9s; }
+.delay_7000ms{ -webkit-animation-delay:7s;   animation-delay:7s; }
+.delay_7100ms{ -webkit-animation-delay:7.1s; animation-delay:7.1s; }
+.delay_7200ms{ -webkit-animation-delay:7.2s; animation-delay:7.2s; }
+.delay_7300ms{ -webkit-animation-delay:7.3s; animation-delay:7.3s; }
+.delay_7400ms{ -webkit-animation-delay:7.4s; animation-delay:7.4s; }
+.delay_7500ms{ -webkit-animation-delay:7.5s; animation-delay:7.5s; }
+.delay_7600ms{ -webkit-animation-delay:7.6s; animation-delay:7.6s; }
+.delay_7700ms{ -webkit-animation-delay:7.7s; animation-delay:7.7s; }
+.delay_7800ms{ -webkit-animation-delay:7.8s; animation-delay:7.8s; }
+.delay_7900ms{ -webkit-animation-delay:7.9s; animation-delay:7.9s; }
+
+.delay_8000ms{ -webkit-animation-delay:8s;   animation-delay:8s; }
+.delay_8100ms{ -webkit-animation-delay:8.1s; animation-delay:8.1s; }
+.delay_8200ms{ -webkit-animation-delay:8.2s; animation-delay:8.2s; }
+.delay_8300ms{ -webkit-animation-delay:8.3s; animation-delay:8.3s; }
+.delay_8400ms{ -webkit-animation-delay:8.4s; animation-delay:8.4s; }
+.delay_8500ms{ -webkit-animation-delay:8.5s; animation-delay:8.5s; }
+.delay_8600ms{ -webkit-animation-delay:8.6s; animation-delay:8.6s; }
+.delay_8700ms{ -webkit-animation-delay:8.7s; animation-delay:8.7s; }
+.delay_8800ms{ -webkit-animation-delay:8.8s; animation-delay:8.8s; }
+.delay_8900ms{ -webkit-animation-delay:8.9s; animation-delay:8.9s; }
+
+
+.delay_9000ms{ -webkit-animation-delay:9s;   animation-delay:9s; }
+.delay_9100ms{ -webkit-animation-delay:9.1s; animation-delay:9.1s; }
+.delay_9200ms{ -webkit-animation-delay:9.2s; animation-delay:9.2s; }
+.delay_9300ms{ -webkit-animation-delay:9.3s; animation-delay:9.3s; }
+.delay_9400ms{ -webkit-animation-delay:9.4s; animation-delay:9.4s; }
+.delay_9500ms{ -webkit-animation-delay:9.5s; animation-delay:9.5s; }
+.delay_9600ms{ -webkit-animation-delay:9.6s; animation-delay:9.6s; }
+.delay_9700ms{ -webkit-animation-delay:9.7s; animation-delay:9.7s; }
+.delay_9800ms{ -webkit-animation-delay:9.8s; animation-delay:9.8s; }
+.delay_9900ms{ -webkit-animation-delay:9.9s; animation-delay:9.9s; }
+
+.page_index{background:#3e88f1;overflow:hidden;}
+.page_index .qqpulse{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.index-txt,
+.index-flight{text-align:center;position:relative;z-index:9;}
+.index-txt{margin:15% 0 10%;}
+.index-txt .f01{left:10%;top:5%;}
+.index-txt .f02{right:22%;bottom:0%;}
+.index-building{bottom:0;left:0;z-index:1;}
+.index-element{bottom:0;left:0;z-index:3;}
+.index-cloud,
+.index-stars{top:7%;text-align:center;width:100%;z-index:2;}
+.index-stars{top:0;}
+
+.page-was{background:#000;}
+.was-txt{position:relative;z-index:3;}
+.was-bg{width:100%;height:100%;background:url("../images/wasBg.jpg") 50% 100% no-repeat #000;}
+.was-line{width:100%;height:100%;background:url("../images/wasStar.png") 50% 50% no-repeat;}
+.was-it{margin-bottom:60px;}
+
+.page-early{background:#01172c;}
+.block-page{position:absolute;left:0;top:0;height:100%;width:100%;}
+.block-page .title{left:0;top:5%;}
+.b-build{bottom:0;left:0;}
+.b-build img{width:100%;}
+.last-bus{left:0;bottom:5%;}
+.bus-avatar{bottom:8%;right:0;}
+
+/*.block-where-wrap{background:#000;}*/
+.where-bg{top:0;left:0;width:100%;height:100%;overflow:hidden;background:#000;}
+.where-bg img{width:100%;}
+.where-txt{bottom:12%;width:100%;text-align:center;}
+.where-wall{bottom:0;right:0;}
+.where-avatar{right:5%;bottom:60%;}
+.where-myteam{left:15%;top:30%;}
+.where-myteam img{margin:5px 0;}
+
+.page-light{background:#302e5c;}
+.light-btn{z-index:2;left:2%;top:15%;}
+.light-page{left:0;bottom:0;height:100%;width:100%;z-index:1;}
+.light-page .light-bg{bottom:-2px;z-index:1;}
+.light-btn-on{display:none;}
+.light-click-guide{left:30%;top:28%;z-index:3;}
+
+.light-off{background:#302e5c;}
+.light-title{right:0;top:5%;z-index:3;}
+.light-off-wall{right:0;bottom:0;z-index:2;}
+.light-on{background:#1a7fdc;display:none;}
+.light-flowers{bottom:-12px;right:5%;z-index:2;}
+.light-knowyou{top:25%;left:32%;z-index:2;}
+
+.page-about{background:url("../images/aboutBg.jpg") 0 100% no-repeat #658b0e;}
+.page-about{text-align:center;}
+.foot-avatar{margin:-120px 5% 25px 0;text-align:right;}
+.foot-txt{margin-top:-150px;}
+.page-run{background:url("../images/runBg.jpg") 0 0 no-repeat #837571;text-align:center;}
+.run-avatar{padding:25% 0 0 15%;text-align:left;margin-bottom:30px;}
+.run-txt{margin-top:-150px;}
+.page-salary{background:#4add9d;text-align:center;}
+.salary-city{padding:5% 0 0;margin-bottom:-50px;}
+.salary-avatar{top:6.5%;left:20%;}
+.salary-ta{margin-bottom:-20px;}
+.salary-txt{margin-top:-150px;}
+
+.page-intro{background:#b5effd;}
+.intro-txt{background:#fc5955;padding:15px;border-radius:20px;margin:15px;height:70%;position:relative;z-index:3;overflow:hidden;}
+.intro-txt-inner{background:#ef3d38;padding:80px 20px 150px;border-radius:3px;color:#fff;font-size:24px;line-height:150%;height:67%;}
+.intro-txt-inner p{text-indent:2em;}
+.intro-logo{text-align:center;padding:80px 0 0;margin-bottom:-50px;position:relative;z-index:4;}
+.intro-flower{left:20px;top:55px;}
+.intro-avatar{right:0;bottom:0;z-index:4;}
+.intro-star{right:200px;bottom:200px;z-index:4;}
+.intro-cloudy{top:110px;left:0;width:100%;text-align:center;z-index:4;}
+
+.page-end{text-align:center;background:url("../images/endBg.png") no-repeat #3e88f1;background-size:100% 100%;}
+.end-logo{padding:15% 0 10%;}
+.end-txt{margin-bottom:35px;}
+.end-clickguide{padding:80px 0 30px;}
+.end-bottom-txt{bottom:25px;width:100%;}
+.end-cloudys{left:0;width:100%;top:120px;}
+.end-avatar{z-index:9999;display:block!important;position:relative;}
+.end-cloudys img{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.end-avatar img{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+/* iPhone 3  */
+@media only screen
+and (device-width : 320px)
+and (device-height : 480px){
+}
+@media only screen
+and (device-width : 320px)
+and (device-height : 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+}
+
+/* iPhone 6  */
+@media only screen
+and (device-width : 375px)
+and (device-height : 667px){
+}
+/* iPhone 6 plus  */
+@media only screen
+and (device-width : 414px)
+and (device-height : 736px){
+}
+/* iPhone 5 */
+@media only screen
+and (device-width : 320px)
+and (device-height : 568px){
+}

@@ -1,0 +1,29 @@
+<project name="project" default="">
+    <property file="application.properties"/>
+    <property name="projectHome" value="."/>
+
+    <target name="build-ci" depends="deploy-wcl,restart-wcl"/>
+
+	<!--
+    <target name="up" description="UPDATE Html">
+        <sshexec host="${server.wcl.ip}" username="root" port="${server.wcl.port}" keyfile="${server.keyfile}"
+                 command="${server.wcl.up}" failonerror="false"/>
+    </target>
+	-->
+    <target name="deploy-wcl" description="--> The deploy target (wcl Env)">
+        <sshexec host="${server.wcl.ip}" username="${server.username}" trust="true" port="${server.wcl.port}"
+                 keyfile="${server.keyfile}" command="${server.wcl.rsync}" />
+    </target>
+	
+    <target name="restart-wcl" description="Restart Server">
+        <sshexec host="${server.wcl.ip}" username="root" port="${server.wcl.port}" keyfile="${server.keyfile}"
+                 command="${server.wcl.restart}" failonerror="false"/>
+    </target>
+
+</project>
+
+
+
+
+
+

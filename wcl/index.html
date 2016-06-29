@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="ui-viewport-640 mobile ks-webkit600 ks-webkit" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>微策略</title>
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <script src="script/jquery-1.8.2.js"></script>
+    <link href="style/aio.min.css" rel="stylesheet" type="text/css">
+    <link href="style/animate.min.css" rel="stylesheet" type="text/css">
+    <script src="style/aio.min.js"></script>
+    <link href="style/wcl.css" rel="stylesheet" type="text/css">
+    <script>
+        //获取浏览器页面可见高度和宽度
+        var _PageHeight = document.documentElement.clientHeight,
+                _PageWidth = document.documentElement.clientWidth;
+        //计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+        var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+                _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+        //在页面未加载完毕之前显示的loading Html自定义内容
+        var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:100%;px;top:0;background:#fff;z-index:10000;"><div class="login_inner" style=" top:' + _LoadingTop + 'px;"></div></div>';
+        //呈现loading效果
+        document.write(_LoadingHtml);
+
+        window.onload = function () {
+            var loadingMask = document.getElementById('loadingDiv');
+            loadingMask.parentNode.removeChild(loadingMask);
+        };
+
+        //监听加载状态改变
+        document.onreadystatechange = completeLoading;
+
+        //加载状态为complete时移除loading效果
+        function completeLoading() {
+//            if (document.readyState == "complete") {
+//                var loadingMask = document.getElementById('loadingDiv');
+//                loadingMask.parentNode.removeChild(loadingMask);
+//            }
+        }
+    </script>
+</head>
+<body>
+<!--<img src="images/avatar.jpg" alt="" style="opacity: 0;position:absolute;"/>-->
+<!-- container -->
+<div class="container">
+    <div class="content">
+        <div class="content-body">
+            <div class="ui-loading js-loading" style="display: none;">
+                <i class="fa fa-circle-o-notch fa-spin- fa-3x">
+                </i>
+            </div>
+            <div class="music_btn active"></div>
+            <div class="power-scroll-container js-power-scroll-container" style="">
+                <div class="swiper-container js-power-scroll" data-options="{&quot;hashNav&quot;:false,&quot;mode&quot;:&quot;vertical&quot;,&quot;loop&quot;:false,&quot;shadow&quot;:true}">
+                    <div class="swiper-wrapper slide_index">
+                        <div class="swiper-slide page-index" data-hash="index" style="">
+                            <div class="slide-wrapper">
+                                <div class="index-content">
+                                    <div class="index-bg">
+                                    </div>
+                                    <h1 class="logo"><img src="images/logo.png" /></h1>
+                                    <ul class="index-txts">
+                                        <li class="dots bounceInDown animated delay_400ms">由麻省理工学院毕业生创建于1989年</li>
+                                        <li class="dots bounceInDown animated delay_300ms">全球最大的独立商务智能软件上市公司</li>
+                                        <li class="dots bounceInDown animated delay_200ms">数以百万的商业用户遍布世界近4000个公司和20多个行业</li>
+                                        <li class="dots bounceInDown animated delay_100ms">办公机构分布在24个国家的42个城市</li>
+                                        <li class="dots bounceInDown animated ">十年稳健快速的增长，2014年营业额超过36亿RMB</li>
+                                    </ul>
+                                </div>
+                                <div class="index-bottom bounceInUp animated">
+                                    <div class="index-bottom-inner fadeIn animated delay_300ms">
+                                        <div class="bgmaps bgmove animated infinite"> <img src="images/map.png" alt="" /> </div>
+                                        <div class="bgmaps bgmove0 animated infinite"> <img src="images/map.png" alt="" /> </div>
+                                    </div>
+                                    <div class="shadow"></div>
+                                </div>
+                                <div class="ui-up-arrow" style="display: block">
+                                    <a href="javascript:;">
+                                        <img src="images/arrowUp.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-salary" data-hash="salary" style="">
+                            <div class="slide-wrapper">
+                                <div class="salary-bg fadeIn animated"></div>
+                                <div class="salary-content">
+                                    <h1 class="logo"><img src="images/logoGray.png" /></h1>
+                                    <div class="salary-info">
+                                        <div class="rote abs bounceInUp animated">
+                                            <img src="images/salaryArrowOrange.png" alt="" class="abs rotateIn animated delay_400ms" />
+                                            <img src="images/salaryArrowGreen.png" alt="" class="abs rotateIn animated delay_300ms" />
+                                            <img src="images/salaryRote.png" alt="" />
+                                        </div>
+                                        <div class="develop abs fadeIn delay_800ms animated">
+                                            <img src="images/salaryBallDevelop.png" alt="" class="qqflash animated infinite delay_500ms" />
+                                            <img src="images/salaryDevelop.png" alt="" class="abs txt" />
+                                        </div>
+                                        <div class="pay abs fadeIn delay_1s animated">
+                                            <img src="images/salaryBallPay.png" alt="" class="qqflash animated infinite delay_1s" />
+                                            <img src="images/salaryPay.png" alt="" class="abs txt"/>
+                                        </div>
+                                        <div class="welcare abs animated delay_1200ms fadeIn">
+                                            <img src="images/salaryBallWelcare.png" alt="" class="qqflash animated infinite delay_1500ms"/>
+                                            <img src="images/salaryWelcare.png" alt="" class="abs txt" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="arrow-up-s2 bounceInUp animated delay_1s"></div>
+                                <div class="ui-up-arrow" style="display: block">
+                                    <a href="javascript:;" >
+                                        <img src="images/arrowUpWhite.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-office" data-hash="office" style="">
+                            <div class="slide-wrapper">
+                                <h1 class="logo"><img src="images/logoOffice.png" /></h1>
+                                <div class="office-list-box">
+                                    <ul class="clearfix view-list">
+                                        <li><img src="images/officeViewHz.jpg" alt="坐落于美丽的‘天堂’杭州" /><span>坐落于美丽的“天堂”杭州</span></li>
+                                    </ul>
+                                    <ul class="tumb-list clearfix">
+                                        <li class="animated current infinite delay_100ms" data-target="hz"><img src="images/officeTumHZ.png" /></li>
+                                        <li class="animated infinite delay_300ms" data-target="front"><img src="images/officeTumFront.png" /></li>
+                                        <li class="animated infinite delay_500ms" data-target="rest"><img src="images/officeTumRest.png" /></li>
+                                        <li class="animated infinite delay_700ms" data-target="read"><img src="images/officeTumRead.png" /></li>
+                                        <li class="animated infinite delay_900ms" data-target="food"><img src="images/officeTumFood.png" /></li>
+                                        <li class="animated infinite delay_1100ms" data-target="port"><img src="images/officeTumPort.png" /></li>
+                                        <li class="animated infinite delay_1300ms" data-target="work"><img src="images/officeTumWork.png" /></li>
+                                    </ul>
+                                </div>
+                                <div class="ui-up-arrow" style="display: block">
+                                    <a href="javascript:;">
+                                        <img src="images/arrowUp.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-events" data-hash="events" style="">
+                            <div class="slide-wrapper">
+                                <h1 class="logo"><img src="images/logoGray.png" /></h1>
+                                <div class="port-pic-box port-club" id="portPhotos">
+                                    <img src="images/eventsPicBg.png" alt="" class="picbg" />
+                                    <div class="photo-avatar"></div>
+                                    <ul class="port-pic-thumb">
+                                        <li class="club qqflash animated infinite" data-target="club">
+                                            <span class="avatar"></span>
+                                            <span class="title"> <b>俱乐部</b>骑行</span>
+                                        </li>
+                                        <li class="meeting qqflash animated infinite delay_300ms" data-target="meeting">
+                                            <span class="avatar"></span>
+                                            <span class="title"> <b>晚会</b>中秋表演</span>
+                                        </li>
+                                        <li class="game qqflash animated infinite delay_600ms" data-target="game">
+                                            <span class="avatar"></span>
+                                            <span class="title"> <b>游戏</b>纸牌</span>
+                                        </li>
+                                        <li class="care qqflash animated infinite delay_900ms" data-target="care">
+                                            <span class="avatar"></span>
+                                            <span class="title"> <b>员工关怀</b>中医按摩</span>
+                                        </li>
+                                        <li class="jump qqflash animated infinite delay_1200ms" data-target="jump">
+                                            <span class="avatar"></span>
+                                            <span class="title"> <b>竞技</b>跳绳</span>
+                                        </li>
+                                    </ul>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="ui-up-arrow" style="display: block">
+                                    <a href="javascript:;">
+                                        <img src="images/arrowUp.png" alt="滑动提示">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page-join" data-hash="join" style="">
+                            <div class="slide-wrapper">
+                                <div class="end-img end-top fadeIn animated">
+                                    <img src="images/endTopImg.png" alt="" />
+                                </div>
+                                <div class="end-img end-bottom fadeIn animated delay_700ms">
+                                    <img src="images/endBottomImg.png" alt="" />
+                                </div>
+                                <h1 class="logo bounceInDown animated"><img src="images/logoEnd.png" /></h1>
+                                <div class="welcome-info">
+                                    <p class="welcome fadeIn animated delay_200ms">欢迎加入微策略</p>
+                                    <p class="icon fadeIn animated delay_500ms"><img src="images/endIcon.png" /></p>
+                                    <div class="bounceInUp animated delay_400ms">
+                                        <p class="txt qqbounce animated infinite">猛戳下面</p>
+                                    </div>
+                                    <a href="http://wcl.tupu360.com/common/positionList?enter=menu" class="btn-join fadeIn animated delay_700ms">加入我们</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="landscape_notice">
+    <div class="text-center font-size-28 c-white">
+        <i class="fa fa-4x fa-mobile"></i><br><span>请将屏幕竖向浏览</span>
+    </div>
+</div>
+<script>
+    (new MobileSlider()).init();
+</script>
+<script src="style/wei-user.js"></script>
+</body>
+</html>
