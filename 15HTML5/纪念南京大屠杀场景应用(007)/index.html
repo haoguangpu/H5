@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>铭记·南京1937</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<meta name="auther" content="cwj 15431" />
+<script src="js/zepto.min.js"></script>
+<script type="text/javascript">
+   function show(obj){
+		 var divid=document.getElementById(obj);
+		 divid.style.display="block";
+	 }
+	 function turnoff(obj){
+		 var divid=document.getElementById(obj);
+		 divid.style.display="none";
+	 }
+	 $(function(){
+		 $('#wyxh img').click(function(){
+			 $('#wyxh').addClass("s-last_active");
+			 $('.s-last_06').css("display", "none");
+			 setTimeout(function(){
+				 $('#wyxh').removeClass("s-last_03");
+				 $('#s-last_num').css("display", "block");
+				 $('#wyxh').removeClass("s-last_active");
+			 },4000);
+		 })
+		 //点击info任意处回到地图页
+		 $(".info").click(function(){
+			$(this).hide();
+		 })
+	 })
+</script>
+</head>
+<body>
+<div class="swiper-container">
+	<div class="videobox"></div>
+	<div class="swiper-wrapper" id="scene">
+		<div class="swiper-slide slide0">
+			<div class="bg"><img src="images/bg_001.jpg" alt=""></div>
+			<div class="s-001_title"><img src="images/mj_1937.png" alt=""></div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide1">
+			<div class="bg"><img src="images/bg_002.jpg" alt=""></div>
+			<div class="s-002_text text">
+				<p>1937年12月13日，南京沦陷。<br>日军占领南京后，制造极端恐怖，<br>纵兵滥杀无辜。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide2">
+			<div class="bg"><img src="images/bg_002.jpg" alt=""></div>
+			<div class="s-003_map"><img src="images/map.jpg" alt=""></div>
+			<div class="s-003_ts"><img src="images/click_hy.png" alt="点击重温历史"></div>
+			<div id="s-003_frame01" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info01')"><img src="images/flame.gif" alt="燕子矶"></a></div>
+			<div id="s-003_frame02" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info02')"><img src="images/flame.gif" alt="草鞋峡"></a></div>
+			<div id="s-003_frame03" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info03')"><img src="images/flame.gif" alt="鱼雷营"></a></div>
+			<div id="s-003_frame04" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info04')"><img src="images/flame.gif" alt="中山码头"></a></div>
+			<div id="s-003_frame05" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info05')"><img src="images/flame.gif" alt="太平门"></a></div>
+			<div id="s-003_frame06" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info06')"><img src="images/flame.gif" alt="汉中门"></a></div>
+			<div id="s-003_frame07" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info07')"><img src="images/flame.gif" alt="江东门"></a></div>
+			<div id="s-003_frame08" class="flame"><a href="javascript:void(0)" onClick="show('s-003_info08')"><img src="images/flame.gif" alt="中华门"></a></div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+			<div id="s-003_info01" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_01.jpg" ></div>
+				<div class="info_js">
+					<h3>燕子矶</h3><p>1937年12月，3万多名解除武装的士兵和2万多平民，避聚于燕子矶江滩，求渡北逃。被日舰封锁，后又被大队日军包围后，以机枪横扫，惨遭杀害，总数达5万余人。</p>
+				</div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info01')">关闭</a></div>
+			</div>
+			<div id="s-003_info02" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_02.jpg" ></div>
+				<div class="info_js"><h3>草鞋峡</h3><p>1937年12月18日，侵华日军将被拘囚于幕府山下的难民和被俘军人5.7万余人，用铅丝捆绑，驱至下关草鞋峡，先用机枪扫射，又用刺刀戳毙，最后浇煤油纵火焚烧，残骸弃入长江。</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info02')">关闭</a></div>
+			</div>
+			<div id="s-003_info03" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_03.jpg" ></div>
+				<div class="info_js"><h3>鱼雷营</h3><p>1937年12月15日，侵华日军将已解除武装的守城官兵和南京平民9000余人，押至鱼雷营，以机枪集体射杀。同月，日军在鱼雷营、宝塔桥一带再次杀害我军民3万余人，尸曝于野长达数月。</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info03')">关闭</a></div>
+			</div>
+			<div id="s-003_info04" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_04.jpg" ></div>
+				<div class="info_js"><h3>中山码头</h3><p>在这里被侵华日军惨杀者，达万人以上。1937年12月16日傍晚，日军从避居于原华侨招待所难民中，捕获所谓有"当兵"嫌疑者5000余人，押解于此，用机枪集体射杀后弃尸江中。12月18日，日军又从避居于大方巷之难民中，搜捕青年4000余名押解至此，用机枪射杀。</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info04')">关闭</a></div>
+			</div>
+			<div id="s-003_info05" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_05.jpg" ></div>
+				<div class="info_js"><h3>太平门</h3><p>1937年12月13日，第十六师团三十三联队六中队等侵华日军部队在南京太平门附近，将约1300名放下武器的中国官兵及无辜市民集中起来，用铁丝网围住，用事先埋好的地雷炸、机枪扫射，再浇上汽油焚烧。</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info05')">关闭</a></div>
+			</div>
+			<div id="s-003_info06" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_06.jpg" ></div>
+				<div class="info_js"><h3>汉中门</h3><p>1937年12月15日下午，避难于国际安全区之平民和已解除武装之军警共2000余人，遭日军搜捕，被押赴汉中门外用机枪扫射杀害，其伤而未死者或乱刀补戳，或纵火活焚，尸骸蔽野，惨绝人寰。</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info06')">关闭</a></div>
+			</div>
+			<div id="s-003_info07" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_07.jpg" ></div>
+				<div class="info_js"><h3>江东门</h3><p>1937年12月16日，日军将已被解除武装的中国士兵和平民万余人押至江东门，以轻重机枪猛烈扫射，受害者相继倒卧于血泊之中。遗尸数月，才由南京慈善团体收尸万余具，掩埋于就近之两大土坑内，故称"万人坑"。</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info07')">关闭</a></div>
+			</div>
+			<div id="s-003_info08" class="info">
+				<div class="info_bg"><img src="images/info_bg.jpg" ></div>
+				<div class="info_img"><img src="images/info_08.jpg" ></div>
+				<div class="info_js"><h3>中华门</h3><p>1937年12月13日，日军坦克驶入中华门。中华门前尸横遍地，血流成河……</p></div>
+				<div class="info_close"><a href="javascript:void(0)" onClick="turnoff('s-003_info08')">关闭</a></div>
+			</div>  
+		</div>
+		<div class="swiper-slide slide3">
+			<div class="bg"><img src="images/bg_002.jpg" alt=""></div>
+			<div class="s-004_text text">为了他们，我们无法遗忘……</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide4">
+			<div class="bg"><img src="images/bg_003.jpg" alt=""></div>
+			<div class="s-005_text text">
+				<h3>证言·夏淑琴：</h3>
+				<p>日军进攻南京前，我家里共有9口人，住在新路口5号，除了我和1岁的小妹妹，全家7口被日军杀害，我和妹妹是被人从死人窝里拣出来的两个孩子。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide5">
+			<div class="bg"><img src="images/bg_004.jpg" alt=""></div>
+			<div class="s-006_text text">
+				<h3>证言·伍正禧：</h3>
+				<p>我家在1937年的大屠杀中有七口人被杀害，爷爷和表哥都被日军用刺刀捅死。日本兵看见后屋我姑母家的表娘，她才30岁，没来得及躲避，被日军奸污了。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide6">
+			<div class="bg"><img src="images/bg_005.jpg" alt=""></div>
+			<div class="s-007_text text">
+				<h3>证言·张秀红：</h3>
+				<p>1937年冬天日军侵占南京时，我才12岁。鬼子用刺刀指着我，把我拖到床上，扒掉了我的裤子。我下身被鬼子撕裂了，留下终身残疾。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide7">
+			<div class="bg"><img src="images/bg_006.jpg" alt=""></div>
+			<div class="s-008_text text">
+				<h3>证言·刘世海：</h3>
+				<p>日本兵不分青红皂白，把我们强行赶到监狱东边的一块菜地里，命令我们排成一队，冷不防日本兵一起从周围冲上来，用军刀、刺刀乱砍乱杀。同行的五十来人，只有我一人幸存，现在脖子上还有约十厘米的刀疤。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide8">
+			<div class="bg"><img src="images/bg_007.jpg" alt=""></div>
+			<div class="s-009_text text">
+				<h3>证言·沈锡恩：</h3><!--<h4> ——沈锡恩证言</h4> -->
+				<p>我家后屋的邻居李扩飞，抱着我家三岁的女儿月云，日军看她长得漂亮，把月云硬从扩飞怀里拉出，一下摔倒墙角，把扩飞连推带搡弄到后房强奸了。我的孩子月云被摔得半死不活，眼睛直向上翻，没过两天就死了。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide9">
+			<div class="bg"><img src="images/bg_008.jpg" alt=""></div>
+			<div class="s-010_text text">
+				<h3>证言·刘永兴：</h3>
+				<p>到了下关码头江边，发现日军共抓了好几千人。日军叫我们坐在江边，用机枪开始扫射。许多人往江里面跳，日军又往江里面扔手榴弹，向尸体上面浇汽油，看见江边漂浮的尸体就用刺刀乱戳，侥幸活下来的人不足十人。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide10">
+			<div class="bg"><img src="images/bg_009.jpg" alt=""></div>
+			<div class="s-011_text text">
+				<h3>证言·李金鱼：</h3>
+				<p>那年我才14岁，当时正和堂姐李金娥还有六岁的妹妹李焕清在院子里玩。突然有两个日本兵端着明晃晃的刺刀闯了进来，用刺刀逼着我们跟他们走……</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide11">
+			<div class="bg"><img src="images/bg_010.jpg" alt=""></div>
+			<div class="s-012_text text">
+				<h3>证言·陈德贵：</h3>
+				<p>我躲在火车里，亲眼看见一批十多人的难民，被日本鬼子一批批枪杀，从早晨直到傍晚。还有六七百人，日本鬼子把他们一起赶至河口，用机枪集体射杀他们。</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide12">
+			<div class="bg"><img src="images/bg_002.jpg" alt=""></div>
+			<div class="s-013_text text1">
+				<p class="type1">南京审判战犯军事法庭经调查判定，1937年12月13日至1938年1月，日军在南京集体屠杀有<font>28</font>案，屠杀人数达<font>19</font>万人；零散屠杀有<font>858</font>案，死亡人数达<font>15</font>万之多。<font>30</font>多万名手无寸铁的平民百姓和放下武器的中国士兵被血腥屠杀。</p>
+				<p class="type2">白骨累累，铁证如山。</p>
+				<p class="type3">然而，直到今天，日本右翼仍然不肯承认南京大屠杀……</p>
+			</div>
+			<div class="s-jiantou"><img src="images/jiantou.png" alt=""></div>
+		</div>
+		<div class="swiper-slide slide13">
+			<div class="bg"><img src="images/bg_002.jpg" alt=""></div>
+			<div class="s-last_02">
+				这段历史，<br>有些人忘了，我们不能忘。<br>12月13日，国家公祭日。<br>
+			</div>
+			<div class="s-last_01"><img src="images/num.png"></div>
+			<div class="s-last_07"><font>我要为南京大屠杀死难同胞献花</font></div>
+			<div id="wyxh" class="s-last_03"><a title="我要献花" href="javascript:getNum('gjr1_1111');"><span class="ico"><i class="ico-fn-up ico-fn-up"><img src="images/flower.png"></i></span></a></div>
+			<div class="s-last_06"><img src="images/cursor.png"></div>
+			<input type="hidden" value="gjr1_1111" id="cms1" />
+			<div id="s-last_num">
+				<div class=" tc_1"><img src="images/last_tc.jpg"></div>
+				<div class="tc_2">
+					您是第<span id="gjr1_1111" class="num">3321</span>位祭祀者<br>
+					<font>点击</font>右上角，<br>
+					<font>转发</font>到朋友圈，<br>
+					让更多中国人看到！
+				</div>
+			</div>
+		</div><!-- /swiper-slide -->
+	</div><!-- /scene -->
+	<div class="pagination"></div>
+</div>
+<script type="text/javascript" src="js/click.js"></script>
+<script src="js/idangerous1.js"></script> 
+<script>
+    var imgUrl = "images/share.jpg";
+    var lineLink = "index.html";
+    var descContent = "";
+    var shareTitle = '铭记南京1937';
+    var appid = '';
+    //默认事件禁止touchmove
+    document.documentElement.addEventListener('touchmove', function(e){
+        e.preventDefault();
+    });
+    //全屏滚动
+    var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+        mode: 'vertical',
+        onSlideChangeStart: function(swiper){
+            //动画
+            var curpage = mySwiper.activeIndex;
+            if(!$(".slide"+curpage).hasClass("slide"+curpage+"-show")){
+              $(".slide"+curpage).addClass("slide"+curpage+"-show");
+            }
+            $(".slide"+(curpage-1)).removeClass("slide"+(curpage-1)+"-show");
+            $(".slide"+(curpage+1)).removeClass("slide"+(curpage+1)+"-show");
+        }
+    })
+    
+    
+    	//微信分享到朋友圈
+     function getdingnum()
+     {
+         if($("#gjr1_1111").length==0)
+         {
+             
+             
+             descContent= "我为南京大屠杀同胞献了花。铭记历史、祭奠同胞、祈愿和平，转发给更多中国人！";
+         }
+         else
+         {
+             var bddd=$("#gjr1_1111").text();
+             
+             descContent= "我是全国第"+bddd+"位为南京大屠杀同胞献花的人。铭记历史、祭奠同胞、祈愿和平，转发给更多中国人！";
+         }
+         
+     }
+    getdingnum();
+        function shareFriend() {
+            getdingnum();
+            WeixinJSBridge.invoke('sendAppMessage',{
+                "appid": appid,
+                "img_url": imgUrl,
+                "img_width": "200",
+                "img_height": "325",
+                "link": lineLink,
+                "desc": descContent,
+                "title": shareTitle
+            }, function(res) {
+                //_report('send_msg', res.err_msg);
+            })
+        }
+        function shareTimeline() {
+            getdingnum();
+            WeixinJSBridge.invoke('shareTimeline',{
+                "img_url": imgUrl,
+                "img_width": "200",
+                "img_height": "325",
+                "link": lineLink,
+                "desc": descContent,
+                "title": descContent,
+            }, function(res) {
+                   //_report('timeline', res.err_msg);
+            });
+        }
+        function shareWeibo() {
+            getdingnum();
+            WeixinJSBridge.invoke('shareWeibo',{
+                "content": descContent,
+                "url": lineLink,
+            }, function(res) {
+                //_report('weibo', res.err_msg);
+            });
+        }
+        // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+            // 发送给好友
+            WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                shareFriend();
+            });
+            // 分享到朋友圈
+            WeixinJSBridge.on('menu:share:timeline', function(argv){
+                shareTimeline();
+            });
+            // 分享到微博
+            WeixinJSBridge.on('menu:share:weibo', function(argv){
+                shareWeibo();
+            });
+        }, false);
+</script>
+<script type="text/javascript">
+$(function(){
+ var oAudio=document.getElementById('myAudio');
+  	 oAudio.play();
+	 $('.player-button').click(function(){
+		 if(oAudio.paused)       //paused 属性返回音频/视频是否已暂停。true 指示音频/视频已暂停。否则为 false。
+		 {
+	  		 oAudio.play();
+			 $('.player-button').removeClass("player-button-stop");
+		 }
+		 else{
+			 oAudio.pause();
+			 $('.player-button').addClass("player-button-stop");
+		 }
+	 })
+})
+</script>
+<div class="player-button">
+	<audio id="myAudio" tn-page-editable="aud0" autoplay loop tn-page-editable-type="aud-link" ng-src="bg.mp3" src="bg.mp3"  preload="auto"></audio>
+</div> 
+</body>
+</html>
