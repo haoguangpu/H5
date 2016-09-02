@@ -1,0 +1,53 @@
+@charset "utf-8";
+	.ad_foot li { margin:0 auto 1em; font-size:1.8em; padding:15px; background:#FFF;}
+	.ad_foot li a {display:block;}
+	.ad_foot li .l {width:75px; height:75px; float:left; overflow:hidden;}
+	.ad_foot li .l img {width:75px; width:75px;}
+	.ad_foot li .r {width:78%; float:left; margin-left:30px; color:#666; overflow:hidden;}
+	.ad_foot li .r p {color:#999; font-size:1.2em; }
+	.ad_foot li .r span {font-size:0.8em;}
+	.ad_foot li .r i {font-style:normal;}
+	
+	.lazy-img, .lazy-finish{background-color:#f0eded;}
+	.page-list{font-size:20px;font-family: "Microsoft yahei";padding-left:17px;padding-top:30px;height:35px;border-bottom:1px solid #b5b5b5;display:none;}
+	.ad_foot{padding:15px 15px 0 15px;}
+
+/*声音播放按钮*/
+#song_img {width:293px; height:41px; display:block; position:absolute; right:4.1em; top:1.6em; font-size:1.7em; text-align:center; line-height:41px; color:#FFF; background:url(../img/music_c3.png) no-repeat 0 0;}
+
+/*底部推荐下在*/
+.ad_list{margin-top:2em;}.ad_list li {width:46%; background:none; padding:0; float:left;margin-bottom: 1em;}
+.ad_list li.r {float:right;}.ad_list li a img {width:100%; height:auto;}
+
+.ad_foot h3 {width:100%; height:48px; line-height:48px; background:#F9F5EC;}
+.ad_foot h3 a {display:inline-block; color:#444; width:50%; text-align:center; font-size:1.5em; height:48px; border-bottom:2px solid #FF9240;}
+.ad_foot h3 a.active {color:#FFF; background:#FF9240;}
+
+.magazine_1 li {
+width:100%;
+margin-bottom: 1em;
+font-size: 1.8em;
+padding: 15px;
+background: #FFF;}
+
+.magazine_1 li a {display:block;}
+.magazine_1 li .l {width: 75px;
+height: 75px;
+float: left;
+overflow: hidden;}
+.magazine_1 li .l img {width:75px; height:75px;}
+
+.magazine_1 li .r {width: 78%;
+float: left;
+margin-left: 30px;
+color: #666;
+overflow: hidden;}
+
+
+.magazine_1 li .r p {
+color: #999;
+font-size: 1.2em;}
+
+.magazine_1 li .r span {font-size:0.8em;}
+
+.ad_foot li .r i {font-style:normal;}

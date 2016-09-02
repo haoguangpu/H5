@@ -1,0 +1,68 @@
+/* Basic sample */
+body{
+	overflow:hidden;
+	background-color:#fcfcfc;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.flipbook-viewport{
+	overflow:hidden;
+	width:100%;
+	height:100%;
+}
+.flipbook-viewport .container{
+}
+.flipbook-viewport .flipbook{
+	
+}
+.flipbook-viewport .page{
+	width:461px;
+	height:600px;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.flipbook .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+.flipbook-viewport .page img{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin:0;
+}
+.flipbook-viewport .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
+/*全局音频元件*/
+.u-globalAudio{color: #fff; text-decoration: none; font-size: 24px; position: fixed; left: 50%; margin-left: 230px; top: 80px; display: block; z-index: 9999;}
+.u-globalAudio span{position: absolute; left: -60px; top: 5px; text-shadow: 1px 1px 1px #000; letter-spacing: 2px; -webkit-transition: all 0.2s linear; opacity: 0; -webkit-transform: translateX(-20px);}
+.u-globalAudio .icon-music{width: 46px; height: 44px; background: url(../ke01_img/units-icons.png) 1px 0px; display: block;}
+.u-globalAudio .icon-music{-webkit-animation: reverseRotataZ 1.2s linear infinite;}
+.u-globalAudio span{opacity: 1; -webkit-transform: translateX(0px);}
+@-webkit-keyframes reverseRotataZ{
+	0%{-webkit-transform: rotateZ(0deg);}
+	100%{-webkit-transform: rotateZ(-360deg);}
+}
+@-webkit-keyframes rotataZ{
+	0%{-webkit-transform: rotateZ(0deg);}
+	100%{-webkit-transform: rotateZ(360deg);}
+}
+.pull-left {position:absolute;bottom:5%;right:0;overflow:hidden;width:240px; height:200px; }/*  |xGv00|e69d3d10a97baed58b34702fd0b01ff5 */

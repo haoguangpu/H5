@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+/***提示箭头*****/
+.animateYl { display:block; position:absolute; z-index:9999; 
+}
+.animateYl .bg { display:block; width:100%; height:100%; border-radius:90px; background:rgba(0,0,0,0.3); }
+.animateYl01 {
+	padding-left:20px;
+	top:0;right:-100px;
+	width:240px; height:200px; 
+	animation: move 3s infinite;
+	-moz-animation: move 3s infinite;
+	-webkit-animation: move 3s infinite;	
+	-o-animation: move 3s infinite;	
+}
+.animateYl02 {
+	padding-top:20px;
+	bottom:-84px; left:64%; 
+	margin-left:-65px;
+	width:130px; height:120px;
+	animation: move02 3s infinite;
+	-moz-animation: move02 3s infinite;
+	-webkit-animation: move02 3s infinite;	
+	-o-animation: move02 3s infinite;	
+}
+.animateYl .shou img,.animateYl .cyyle img {width:100%;}
+.animateYl .shou {
+	width:150px;
+	position:absolute; z-index:3;
+	transform:scale(0.5);
+	-webkit-transform:scale(0.5);
+}
+.animateYl .cyyle { position:absolute; z-index:2; opacity:0.1; 
+	animation: show 3s infinite;
+	-moz-animation: show 3s infinite;
+	-webkit-animation: show 3s infinite;	
+	-o-animation: show 3s infinite;
+	width:110px;
+	transform:scale(0.5);
+	-webkit-transform:scale(0.5);
+}
+.animateYl01 .cyyle { top:-17px; left:4px; }
+.animateYl01 .shou { top:-24px; left:13px; }
+.animateYl01 .bg { height:80px; }
+.animateYl02 .cyyle { top:2px; left:-17px; }
+.animateYl02 .shou { top:-2px; left:-15px; }
+.animateYl02 .bg { width:36px; }
+ 
+#arrow-h.hide_ { display:none; }
+#arrow-v.hide_ { display:none; }
+ 
+/**弹出框关闭按钮的效果**/
+@keyframes move {
+  from { width:120px; }
+  to { width:300px; }
+} 
+@-webkit-keyframes move  {
+  from { width:120px; }
+  to { width:300px; }
+}
+@-moz-keyframes move  {
+  from { width:120px; }
+  to { width:300px; }
+}
+@-o-keyframes move  {
+  from { width:120px; }
+  to { width:300px; }
+}
+@-ms-keyframes move  {
+  from { width:120px; }
+  to { width:300px; }
+}
+@keyframes move02 {
+  from { height:120px; }
+  to { height:200px; }
+} 
+@-webkit-keyframes move02  {
+  from { height:120px; }
+  to { height:200px; }
+}
+@-moz-keyframes move02  {
+  from { height:120px; }
+  to { height:200px; }
+}
+@-o-keyframes move02  {
+  from { height:120px; }
+  to { height:200px; }
+}
+@-ms-keyframes move02  {
+  from { height:120px; }
+  to { height:200px; }
+}
+@keyframes show {
+  from { opacity:0.1; }
+  to { opacity:1; }
+} 
+@-webkit-keyframes show  {
+  from { opacity:0.1; }
+  to { opacity:1; }
+}
+@-moz-keyframes show  {
+  from { opacity:0.1; }
+  to { opacity:1; }
+}
+@-o-keyframes show  {
+  from { opacity:0.1; }
+  to { opacity:1; }
+}
+@-ms-keyframes show  {
+  from { opacity:0.1; }
+  to { opacity:1; }
+}
+/***导航地图初始化样式*****/
+.ylmap { position:fixed; top:100%; left:0;
+		z-index:9999; width:100%; height:100%; 
+		opacity:0;
+		-webkit-transition: top 0.5s, opacity 1s;
+		-moz-transition: top 0.5s, opacity 1s;
+		-ms-transition: top 0.5s, opacity 1s;
+		-o-transition: top 0.5s, opacity 1s;
+		transition: top 0.5s, opacity 1s;
+		background:#fff;
+}
+.ylmap .bk{position:absolute;width:100%;height:100%;text-align:center;z-index:-1;background: #efebed}
+.ylmap .bk img{display: inline-block; margin-top: 38%;}
+.ylmap.mapOpen { top:0; opacity:1; }
+/*  |xGv00|5952127478238e4d90750ead8477c1ee */

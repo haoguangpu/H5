@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection"content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>翻书式效果</title>
+  <meta name="Keywords" content="翻书式效果" />
+  <meta name="description" content="翻书式效果" />
+  <link rel="stylesheet" type="text/css" href="css/live.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+  <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/basic.css"/>
+  <link rel="stylesheet" type="text/css" href="css/arrow.css"/>
+  <style type="text/css">
+  body{
+    background:#dddddd url(ke01_img/background.png) repeat;
+  }
+    .loadinner{
+      position:absolute;
+      width:76%;
+    height:100%;
+      margin-left:-38%;
+      left:50%;
+      text-align:center;
+      font-size:11px;
+      line-height:20px;
+    }
+    .graph{ 
+      background:#6c6c6c;
+    width:70%;
+    margin:10px auto 0 auto;
+    } 
+    #bar{ 
+      display:block; 
+      background:#f1f1f1;
+      height:3px;
+      width:10px;
+    }
+    #diary{width:70%;margin:0 auto;}
+    #chupin{width:100%;position:absolute;bottom:80px;}
+  #cpright{position:absolute;bottom:50px;color:#757575;font-size:9px;text-align:center;width:100%;letter-spacing: -1px;word-spacing: -1px;}
+    .fanye{display:none;background:url(ke01_img/fanye.png) center top no-repeat;background-size:cover;
+      text-align:center;position:absolute;bottom:0;left:0;height:15%;width:100%;color:#fff;line-height:15%;font-size:24px;}
+    .fanye span{position: absolute;top: 20px;width: 100%;text-align: center;left: 0;}
+    .weixin_layout{display:none; position:absolute;top:0;left:0;bottom:0;width:100%;height:100%;background:url(ke01_img/weinxin_share.png) no-repeat right top rgba(0, 0, 0, 0.6);-webkit-background-size:320px 150px;-moz-background-size:320px 150px;-o-background-size:320px 150px;background-size:320px 150px;z-index:999999;}
+    #btns{position:absolute;left:50%;top:15%;width:44%;margin:0 0 0 -22%;z-index:999;}
+    #btns button,#btns a{line-height:36px;background: #1ea5d2;border: 1px solid #fcfcfc;color:#404040;width:100%;height:36px;font-size:17px;font-family:"΢���ź�";display:block;text-decoration:none;text-align:center;}
+    </style>
+</head>
+<body>
+  <div id="loading" style="background:#dddddd;">
+    <div class="loadinner">
+      <div style="margin-top:60%;text-align:center;"><img id="diary" src="images/gai.jpg" /></div>
+      <div class="graph"> 
+          <strong id="bar"></strong>
+      </div>
+      <div style="color:#b4b4b4;">ҳ�����ڼ��أ�����WIFI�������Ķ�</div>
+      <div><img id="chupin" src="images/112504702.png" /></div>
+      <div id="cpright">Copyright&copy;2014-2015 ������.All Rights Reserved</div>
+    </div>
+  </div>
+  <div class="flipbook-viewport" style="display:none;">
+      <div class="container">
+        
+        <div class="flipbook">
+        <div style="background:url(ke01_img/0.jpg) center top no-repeat;background-size:100%">
+              </div>
+        
+              <div style="background:url(ke01_img/112504538.jpg) center top no-repeat;background-size:100%">
+               </div> 
+         
+              <div style="background:url(ke01_img/1.jpg) center top no-repeat;background-size:100%">
+                <div class="fanye"><span>01/10</span></div>
+              </div>
+        <div style="background:url(ke01_img/2.jpg) center top no-repeat;background-size:100%">
+                <div class="fanye"><span>02/10</span></div>
+              </div>
+              <div style="background:url(ke01_img/112504530.jpg) center top no-repeat;background-size:100%">
+                <div class="fanye"><span>03/10</span></div>
+              </div>
+              <div id="fth" style="background:url(ke01_img/4.jpg) center top no-repeat;background-size:100%">
+                <div class="fanye"><span>04/10</span></div>
+              </div>
+              <div style="background:url(ke01_img/5.jpg) center top no-repeat;background-size:100%">
+                <div class="fanye"><span>05/10</span></div>
+              </div>
+              <div style="background:url(ke01_img/112504533.jpg) center top no-repeat;background-size:100%">
+                <div class="fanye"><span>06/10</span></div>
+              </div>
+              <div id="sevth" style="background:url(ke01_img/7.jpg) center top no-repeat;background-size:100%">
+              <div class="fanye"><span>07/10</span></div>
+              </div>
+              <div id="tenth" style="background:url(ke01_img/112504535.jpg) center top no-repeat;background-size:100%">
+              <div class="fanye"><span>8/10</span></div>
+              </div>
+              <div style="background:url(ke01_img/112504477.jpg) center top no-repeat;background-size:100%">
+              <div class="fanye"><span>9/10</span></div>
+              </div>
+              
+              <div id="last" style="background:url(ke01_img/zuihou.jpg) center top no-repeat;background-size:100%">
+              <div class="fanye"><span>10/10</span></div>
+              </div>
+              <div id="nnn" style="background:url(ke01_img/fengdi2.jpg) center top no-repeat;background-size:100%">
+                 <div class="fanye"><span>10/10</span></div>
+              </div>
+        </div>
+    
+       </div>
+  </div>
+  <div id="end" style="display:none;width:100%;height:100%;background:url(ke01_img/fengdi2.jpg) center top no-repeat;background-size:100%">
+    <div id="btns">
+      <a style="margin-bottom:40px;" href="index.htm" id="rewatch">�ٿ�һ��</a>
+      <button class="share_btn" style="margin-bottom:200px;"  data-title="�ټ�������2Ԫ�ķ羰" data-url="" data-des="�����յ�վ�⣬��ңԶ�ķ羰��Ҳ��ƣ�������ǣ������ļҡ�" data-pic="images/minilogo.png">��������</button>
+    </div>
+    <div class="weixin_layout"></div>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+  </div>
+  <!-- ȫվ����ͳ�ƴ��� ��ʼ -->
+        <!--pgv 20140225v1.0.3 by Austinjin-->
+<script language="javascript" src="js/ping.js"></script>
+<script>
+if(window['ARTICLE_INFO'] && window['ARTICLE_INFO']['catalog_full']){
+function newPgvDetail(){
+  var catalogPathR1 = ARTICLE_INFO.catalog_full.toString().replace(/-/g,".");
+  var catalogPath = catalogPathR1.toString().replace(/_/g,"-");
+  if(ARTICLE_INFO.topic.name.length>0){var L = "L.",Z = "Z." + catalogPath + "." + ARTICLE_INFO.topic.name;}else{var L = "L." + catalogPath,Z = "Z.";}
+  var W = "W." + ARTICLE_INFO.type,M = "M." + ARTICLE_INFO.tpl.type + ARTICLE_INFO.tpl.stype,P = "P." + ARTICLE_INFO.site.toString().replace(/_/g,"-"),pgvInfo = L + "_" + Z + "_" + W + "_" + M + "_" + P;
+  if(typeof(pgvMain) == 'function'){if(typeof(pgvInfo) != 'undefined'){pgvMain({pgUserType:pgvInfo});}}
+}newPgvDetail();}
+else if(typeof(pgvMain) == 'function'){if(typeof(whatCatalog) != 'undefined'){pvCSTM = whatCatalog;pgvMain();}else{pgvMain();}}
+</script>
+<!--pgv 20140225v1.0.3 end-->
+<!--[if !IE]>|xGv00|6841700967e1d3f2104a7fbe04052c4a<![endif]-->
+  <!-- ȫվ����ͳ�ƴ��� ��ʼ -->
+  <script>$('#bar').animate({width:"100px"});</script>
+  <script type="text/javascript">
+  $(function progressbar(){
+    var w = $(".graph").width();
+    setTimeout(function(){$('#bar').animate({width:w});},500);
+    setTimeout(function(){$(".flipbook-viewport").show();},1000);
+  });
+  //����ios�����µ���
+  $(window).on('scroll.elasticity', function (e) {
+      e.preventDefault();
+  }).on('touchmove.elasticity', function (e) {
+      e.preventDefault();
+  });
+  
+  function loadApp() {
+      var w=$(window).width();
+      var h=$(window).height();
+      $('.flipboox').width(w).height(h);
+      $(window).resize(function(){
+          w=$(window).width();
+          h=$(window).height();
+          $('.flipboox').width(w).height(h);
+      });
+  
+      $('.flipbook').turn({
+              // Width
+              width:w,
+              // Height
+              height:h,
+              // Elevation
+              elevation: 50,
+              display :'single',
+              // Enable gradients
+              gradients: true,
+              // Auto center this flipbook
+              autoCenter: true
+      });
+  }
+    
+  // Load the HTML4 version if there's not CSS transform
+  yepnope({
+      test : Modernizr.csstransforms,
+      yep: ['http://mat1.gtimg.com/ent/limeizhang/fanrenriji/js/turn.js'],
+      nope: ['http://mat1.gtimg.com/ent/limeizhang/fanrenriji/js/turn.html4.min.js'],
+      complete: loadApp
+  });
+  
+  </script>
+  <script type="text/javascript">
+    /**
+     * author: jasonshan && jianminlu
+     * update: 2014-05-26 22:03
+     * version: v2.0
+     */
+          /* ua */
+          var UA = function(){
+            var userAgent = navigator.userAgent.toLowerCase();
+            return {
+              ipad: /ipad/.test(userAgent),
+              iphone: /iphone/.test(userAgent),
+              android: /android/.test(userAgent),
+              qqnews: /qqnews/.test(userAgent),
+              weixin: /micromessenger/.test(userAgent)
+            };
+          }
+ /*         if (/qqnews/.test(navigator.userAgent.toLowerCase()) && $(window).height() <= 480) {
+            $(".page").css({
+              'background-position': 'center -55px!important';
+    'background-repeat': 'no-repeat!important';
+    'background-size': '100%!important';
+            })
+          };*/
+        /**
+     * mSahre �ƶ��˷��?�� ���ſͻ���
+     */
+        var mShare = {
+          main: function(o){
+            var _this = this;
+            var d = {
+              title: "�ټ�������2Ԫ�ķ羰",
+              pic: "images/115.jpg",
+              des: "�����յ�վ�⣬��ңԶ�ķ羰��Ҳ��ƣ�������ǣ������ļҡ�",
+              url: document.location.href
+            };
+            var ua = UA();
+            switch(true){
+              case ua.qqnews:
+                if(window.TencentNews && window.TencentNews.showShareMenu) {
+                  window.TencentNews.showShareMenu(d.url,d.title,d.des,d.pic,"news_news_wc");
+                }else{
+                  window.TencentNews.shareFromWebView(d.title, d.des, d.pic);
+                }
+                break;
+              case ua.weixin:
+                $(".weixin_layout").show();
+                $('.weixin_layout').off('click').on('click',function(){
+                $('.weixin_layout').hide();
+                });
+                break;
+              default:
+                window.location = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=123456&url="
+                + document.location.href + "&title="+"�ټ�������2Ԫ�ķ羰"+"&pic="
+                + "images/115.jpg"+"&des="
+                + "�����յ�վ�⣬��ңԶ�ķ羰��Ҳ��ƣ�������ǣ������ļҡ�";
+                break;
+            };
+          },
+          init: function(e){
+            var _this = this;
+            $("body").on("click",".share_btn",function(){
+              _this.main({
+                title: "�ټ�������2Ԫ�ķ羰",
+                pic: "images/115.jpg",
+                des: "�����յ�վ�⣬��ңԶ�ķ羰��Ҳ��ƣ�������ǣ������ļҡ�",
+                url: document.location.href
+              });
+            });
+          }
+        };
+        mShare.init();
+    
+    document.addEventListener('WeixinJSBridgeReady',
+        function onBridgeReady() {
+            WeixinJSBridge.on('menu:share:appmessage',
+            function(argv) {
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "img_url": "images/115.jpg",
+                    "link": document.location.href,
+                    "desc": "�����յ�վ�⣬��ңԶ�ķ羰��Ҳ��ƣ�������ǣ������ļҡ�",
+                    "title": "�ټ�������2Ԫ�ķ羰"
+                },
+                function(res) {
+                    document.location.href = window.shareData.timeLineLink;
+                })
+            });
+            WeixinJSBridge.on('menu:share:timeline',
+            function(argv) {
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "img_url": "images/115.jpg",
+                    "img_width": "640",
+                    "img_height": "640",
+                    "link": document.location.href,
+                    "desc": "�����յ�վ�⣬��ңԶ�ķ羰��Ҳ��ƣ�������ǣ������ļҡ�",
+                    "title":"�ټ�������2Ԫ�ķ羰"
+                },
+                function(res) {
+                    document.location.href = window.shareData.timeLineLink;
+                });
+            });
+        }, false);
+  </script>
+<style>
+.flipbook .page{
+    background-position: center -70px!important;
+    background-repeat: no-repeat!important;
+    background-size: 100%!important;
+}
+</style>
+</body>
+</html>

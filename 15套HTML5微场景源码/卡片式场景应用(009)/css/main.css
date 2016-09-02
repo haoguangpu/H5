@@ -1,0 +1,507 @@
+/**
+ *  gobal全局样式
+ * ----------------------
+ *  作者：叼怎么写！
+ *  时间：2014-03-21
+ *  准则：NEC
+ *  联系：wechat--shoe11414255
+ *  创意源于生活，代码如诗从你我开始
+ *  OOCSS虽好，需培养，需规范，需慢慢品尝
+ *********************************************************************************************/
+@charset "utf-8";
+/* =reset 网页样式重置
+------------------------------------------------------------------------------------------------------------------------------*/
+html { font-size:1em;-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight:rgba(0,0,0,0);-webkit-text-size-adjust:none;overflow:-moz-scrollbars-vertical;/*强制firefox出现滑动条*/}
+body { font-size:0.75em;}
+label { cursor:pointer;}
+a:link, a:visited { text-decoration:none;}
+input:focus { outline: none; }
+input,button,select,textarea{outline:none;/*-webkit-appearance:none;*//*强制去除表单自带的样式*/ }
+textarea{resize:none;/*-webkit-appearance:none;*//*强制去除textarea自带的样式*/ }
+
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; } /*利用阴影来填充掉input自动填充色*/
+
+textarea,input,select { background: none; border:none; margin: 0; padding: 0; }
+
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, menu, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, var { margin:0; padding:0;}
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption { display: block;} /*html5设置*/
+
+h1, h2, h3, h4, h5, h6, th, td, table, input, button, select, textarea, sub{ font-size:1em;}
+body, input, button, select, textarea, sub{ font-family:Arial, sans-serif;}
+em, cite, address, optgroup { font-style:normal;}
+kbd, samp, code { font-family:monospace;}
+
+img, input, button, select, textarea { vertical-align:middle;outline:none;}
+ul, ol { list-style:none;}
+img, fieldset { border:0;}
+abbr, acronym { cursor:help; border-bottom:1px dotted black;}
+table {	width:100%; border-spacing:0; border:0;}
+table th, table td { border:0;}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0;}
+legend, hr, caption { visibility:hidden; font-size:0; width:0; height:0; line-height:0;}
+
+/**
+ * = global 统一样式
+ *******************************************************************************************************/
+/* 改变动画的效果方式*/
+* {
+  -webkit-transition-timing-function: ease-in-out;
+     -moz-transition-timing-function: ease-in-out;
+      -ms-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+html {height: 100%;}
+body { position: relative; font-family:"微软雅黑"; width: 640px; max-width: 640px; min-width: 640px; height: 100%; margin: 0 auto; }
+body h1,body h2,body h3,body h4,body h5,body h6,body strong,body em {font-weight:normal; } /*微软雅体 将原有的bold属性去掉*/
+
+textarea:focus,input:focus { border: 1px solid #71b643; }
+
+/*sprite图片合并*/
+.css_sprite01 { background-image:url(../images/css_sprite01.png)!important;  background-repeat: no-repeat!important; } 
+
+/**
+ * = function 功能样式
+ *******************************************************************************************************/
+.f-ofh {overflow: hidden; height: 100%!important; } 		/*隐藏内容-overflow-hidden*/
+.f-hide { display: none!important; } 						/*隐藏内容*/
+
+.f-tc { text-align: center; }
+.f-tr { text-align: right; }
+.f-fl { float: left; }
+.f-fr { float: right; }
+.f-fixed { position: fixed; }
+.f-cur { cursor: pointer; }
+
+/*bg-background*/
+.s-bg-ddd { background: #ddd; }
+
+/**
+ * = unit 统一元件样式
+ *******************************************************************************************************/
+/**
+ * 箭头指示元件
+ * -u-arrow
+ */
+.u-arrow { position: fixed; bottom: 30px; left:50%; z-index: 150; width: 80px; height: 80px; margin-left: -39px; /*background: rgba(160,160,160,0.6); border-radius: 50%;*/ }
+.u-arrow p { position: absolute; top: 50%; left: 50%; margin: -14px 0 0 -25px; width: 50px; height: 28px; background-position: 0 -82px;
+	-webkit-animation: start 1.5s infinite ease-in-out;
+	   -moz-animation: start 1.5s infinite ease-in-out;
+	        animation: start 1.5s infinite ease-in-out;
+}
+
+/**
+ * 声音元件
+ * -u-audio
+ */
+.u-audio { position: absolute; top: 40px; right: 0; width: 132px; height: 73px; z-index: 200; }
+.u-audio .res_audio { position: absolute; top: 0; left: 0; opacity: 0; height: 0; width: 0; }
+.u-audio .btn_audio { width: 100%; padding-top: 29px; height: 44px; }
+.u-audio .btn_audio strong,
+.u-audio .btn_audio .audio_open { display: inline-block; height: 44px; line-height: 44px; vertical-align: middle; }
+.u-audio .btn_audio strong { width: 57px; font-size: 24px; color: #fff; opacity: 1; }
+.u-audio .btn_audio .audio_open { position: absolute; bottom: 0; left: 56px; width: 44px; }
+.u-audio .btn_audio strong.z-hide { opacity: 0; }
+.u-audio .btn_audio strong.z-move { 
+	-webkit-transition:opacity 0.5s;
+  	   -moz-transition:opacity 0.5s;
+	    -ms-transition:opacity 0.5s;
+	     -o-transition:opacity 0.5s;
+	        transition:opacity 0.5s;
+}
+.u-audio.z-low { z-index: 1; }
+/**
+ * loading
+ * -u-pageLoading
+ */
+.u-pageLoading { display:none; position:fixed; top:0; left:0; z-index:99999; height:100%; width:100%; background:rgba(0,0,0,0.6); }
+.u-pageLoading img { position:absolute; top:40%; left:50%; height:100px; width:100px; margin:-50px 0 0 -50px; }
+
+/**
+ * 提示小纸条
+ * -u-note
+ */
+.u-note { position: fixed; left: 120px; top:50%; margin-top:-40px;  width: 400px; padding: 15px 0; text-align: center; font-size: 26px; border-radius: 8px; 
+	 opacity: 0;
+	 z-index: -1;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.u-note-error { background: #f48813; }
+.u-note-sucess { background: #55e224; }
+.u-note.on { opacity: 1; z-index: 99; }
+
+/**
+ * = Layout 布局样式
+ *******************************************************************************************************/
+.p-ct { position: relative; width: 640px; height: 100%; overflow: hidden; }
+.p-ct.fixed { overflow: hidden; }
+
+.translate-front { position: fixed; top: 0; left: 0; z-index: 100; height: 100%; width: 100%; opacity: 0; 
+	-webkit-transition: opacity 1s;
+	   -moz-transition: opacity 1s;
+	    -ms-transition: opacity 1s;
+	     -o-transition: opacity 1s;
+	        transition: opacity 1s;
+}
+.translate-front .mengban-warn { position: absolute; }
+.translate-front.z-show { opacity: 1; }
+
+.translate-back { position: relative; width: 100%; height: 100%; }
+
+/**
+ * = modle 模块样式
+ *******************************************************************************************************/
+/**
+ * 单页面page模块
+ * -m-page
+ */
+.m-page { position: absolute; top:0; left: 0; width:100%; z-index: 9; background: #ddd; }
+.m-page .page-con { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.m-page.active { z-index:40; }
+.m-page.fixed { position: fixed; }
+.m-page.move {
+	-webkit-transition:all 0.3s;
+  	   -moz-transition:all 0.3s;
+	    -ms-transition:all 0.3s;
+	     -o-transition:all 0.3s;
+	        transition:all 0.3s;
+}
+
+/**
+ * 大图文模块
+ * -m-bigTxt
+ */
+.bigTxt-bd,
+.bigTxt-arrow,
+.bigTxt-detail,
+.bigTxt-detail p {
+	-webkit-transition:all .8s;
+  	   -moz-transition:all .8s;
+	    -ms-transition:all .8s;
+	     -o-transition:all .8s;
+	        transition:all .8s;
+}
+
+.bigTxt-bd { position: absolute; top: 50px; left: 30px; width: 450px; overflow: hidden; border-radius: 12px; background: rgba(255,255,255,0.7); opacity: 0;
+	-webkit-transform: translate(200px,0);
+	   -moz-transform: translate(200px,0);
+	    -ms-transform: translate(200px,0);
+	     -o-transform: translate(200px,0);
+	        transform: translate(200px,0);
+}
+.bigTxt-bd p { padding:0 65px 0 25px; color: #000; }
+.bigTxt-title { position: absolute; top: 0; left: 0; width: 100%; padding:25px 0; overflow: hidden; font-size: 28px; }
+.bigTxt-title p { height: 100%; line-height: 130%; overflow: hidden; }
+.bigTxt-arrow { position: absolute; bottom: 5px; right: 20px; display: inline-block; width: 34px; height: 34px; background-position: 0 -46px; 
+	-webkit-transform: rotate(0);
+	   -moz-transform: rotate(0);
+	    -ms-transform: rotate(0);
+	     -o-transform: rotate(0);
+	        transform: rotate(0);
+}
+.bigTxt-detail { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; }
+.bigTxt-detail p { width: 400px; overflow: hidden; padding:25px; line-height: 150%; font-size: 24px; border-top: 2px solid #fff; }
+
+.bigTxt-btn { position: absolute; bottom: 120px; left: 50%; width: 480px; height: 80px; margin-left: -240px; background-size: auto!important; }
+.bigTxt-btn a { display: inline-block; width: 100%; height: 80px; line-height: 80px; text-align: center; font-size: 36px; color: #000; letter-spacing: 0.5em; }
+
+.bigTxt-weixin { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; text-align: center; background: rgba(0,0,0,0.7); }
+.bigTxt-weixin img { max-width:100%; }
+.bigTxt-weixin.z-show { display: block; }
+
+.bigTxt-arrow.z-toggle {
+	-webkit-transform: rotate(405deg);
+	   -moz-transform: rotate(405deg);
+	    -ms-transform: rotate(405deg);
+	     -o-transform: rotate(405deg);
+	        transform: rotate(405deg);
+}
+.bigTxt-detail.z-show p,
+.z-animate .bigTxt-bd{ opacity: 1;
+	-webkit-transform: translate(0,0)!important;
+	   -moz-transform: translate(0,0)!important;
+	    -ms-transform: translate(0,0)!important;
+	     -o-transform: translate(0,0)!important;
+	        transform: translate(0,0)!important;
+}
+
+/**
+
+
+
+/**
+ * = pluns 插件样式
+ *******************************************************************************************************/
+/*lazy-img*/
+.lazy-img,
+.lazy-finish { background-size: cover; background-repeat: no-repeat; background-position: center;}
+
+/*声音*/
+.coffee-steam-box { display: none; }
+
+/*轮播图*/
+.m-imgBox { height: 380px; width: 640px; }
+
+/*地图*/
+.ylmap { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index:300; overflow: hidden;  
+	-webkit-transition: all 0.8s;
+	   -moz-transition: all 0.8s;
+	    -ms-transition: all 0.8s;
+	     -o-transition: all 0.8s;
+	        transition: all 0.8s;
+
+	-webkit-transform: translate(0,100%);
+	   -moz-transform: translate(0,100%);
+	    -ms-transform: translate(0,100%);
+	     -o-transform: translate(0,100%);
+	        transform: translate(0,100%);
+}
+.ylmap.mapOpen { 
+	-webkit-transform: translate(0,0);
+	   -moz-transform: translate(0,0);
+	    -ms-transform: translate(0,0);
+	     -o-transform: translate(0,0);
+	        transform: translate(0,0);
+}
+.ylmap.show { display:block; }
+.ylmap .bk{ position:absolute;width:100%;height:100%;text-align:center;z-index:-1;background: #efebed; }
+.ylmap .bk span{ display: inline-block; margin-top: 48%; width: 59px;height: 49px; background-position: -72px -93px; }
+.ylmap .tit p a span { background-position: -72px -144px; }
+
+/**
+ * = animate 动画样式
+ *******************************************************************************************************/
+/*箭头指示引导*/
+@-webkit-keyframes start {
+	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	60% {opacity: 1;-webkit-transform: translate(0,0);}
+	100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+	0%,30% {opacity: 0;-moz-transform: translate(0,10px);}
+	60% {opacity: 1;-moz-transform: translate(0,0);}
+	100% {opacity: 0;-moz-transform: translate(0,-8px);}
+}
+@keyframes start {
+	0%,30% {opacity: 0;transform: translate(0,10px);}
+	60% {opacity: 1;transform: translate(0,0);}
+	100% {opacity: 0;transform: translate(0,-8px);}
+}
+
+/*封面手引*/
+@keyframes fengJump {
+	0%   {transform:translateY(0);}
+	20%  {transform:translateY(0);}
+	40%  {transform:translateY(-40px);}
+	50%  {transform:translateY(0);}
+	60%  {transform:translateY(-15px);}
+	80%  {transform:translateY(0);}
+	100% {transform:translateY(0);}
+}
+@-webkit-keyframes fengJump {
+	0%   {-webkit-transform:translateY(0);}
+	20%  {-webkit-transform:translateY(0);}
+	40%  {-webkit-transform:translateY(-40px);}
+	50%  {-webkit-transform:translateY(0);}
+	60%  {-webkit-transform:translateY(-15px);}
+	80%  {-webkit-transform:translateY(0);}
+	100% {-webkit-transform:translateY(0);}
+}
+@-moz-keyframes fengJump {
+	0%   {-moz-transform:translateY(0);}
+	20%  {-moz-transform:translateY(0);}
+	40%  {-moz-transform:translateY(-40px);}
+	50%  {-moz-transform:translateY(0);}
+	60%  {-moz-transform:translateY(-15px);}
+	80%  {-moz-transform:translateY(0);}
+	100% {-moz-transform:translateY(0);}
+}
+@-ms-keyframes fengJump {
+	0%   {-ms-transform:translateY(0);}
+	20%  {-ms-transform:translateY(0);}
+	40%  {-ms-transform:translateY(-40px);}
+	50%  {-ms-transform:translateY(0);}
+	60%  {-ms-transform:translateY(-15px);}
+	80%  {-ms-transform:translateY(0);}
+	100% {-ms-transform:translateY(0);}
+}
+@-o-keyframes fengJump {
+	0%   {-o-transform:translateY(0);}
+	20%  {-o-transform:translateY(0);}
+	40%  {-o-transform:translateY(-40px);}
+	50%  {-o-transform:translateY(0);}
+	60%  {-o-transform:translateY(-15px);}
+	80%  {-o-transform:translateY(0);}
+	100% {-o-transform:translateY(0);}
+}
+
+/*地图跳动*/
+@keyframes mapJump {
+	  0% {transform:scale(0.1); opacity: 0;}
+	 90% {transform:scale(2); opacity: 0.9;}
+	100% {transform:scale(2);opacity: 1;}
+}
+@-webkit-keyframes mapJump {
+	  0% {-webkit-transform:scale(0.1); opacity: 0;}
+	 90% {-webkit-transform:scale(2); opacity: 0.9;}
+	100% {-webkit-transform:scale(2);opacity: 1;}
+}
+@-moz-keyframes mapJump {
+	  0% {-moz-transform:scale(0.1); opacity: 0;}
+	 90% {-moz-transform:scale(2); opacity: 0.9;}
+	100% {-moz-transform:scale(2);opacity: 1;}
+}
+
+/**
+ * 模版提示的样式以及动画
+ */
+.m-alert strong { font-size: 35px; opacity: 0; 
+	-webkit-transition: opacity .8s;
+	   -moz-transition: opacity .8s;
+	        transition: opacity .8s;
+}
+.m-alert strong.z-show { opacity: 1; }
+
+
+.scene{ position:relative; display:block; width:300px; height:200px; margin:0 auto; }
+.plane,
+.cloud{ position:absolute; }
+.plane{ display:block; margin:0 auto; left:30%;
+  -webkit-animation: anim-plane 1s linear infinite alternate forwards;
+     -moz-animation: anim-plane 1s linear infinite alternate forwards;
+          animation: anim-plane 1s linear infinite alternate forwards;
+  
+  -webkit-transform: translateY(80px);
+     -moz-transform: translateY(80px);
+		  transform: translateY(80px);
+}
+
+.cloud{ display:block; height:40px; width:53px; margin:0 auto;
+  -webkit-animation: 10s linear infinite normal both;
+     -moz-animation: 10s linear infinite normal both;
+          animation: 10s linear infinite normal both;
+
+  -webkit-animation-name:move, fade;
+     -moz-animation-name:move, fade;
+          animation-name:move, fade;
+
+  background:url(data:image/svg+xml;base64,PHN2ZyBpZD0iY2xvdWQiIHZpZXdCb3g9IjAgMCA1MiA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1MnB4IiBoZWlnaHQ9IjQwcHgiPgoJPGRlZnM+CgkJPGZpbHRlciBpZD0iZjEiIHg9Ii0xMDAlIiB5PSItMTAwJSIgd2lkdGg9IjMwMCUiIGhlaWdodD0iMzAwJSI+IAoJCQk8ZmVPZmZzZXQgcmVzdWx0PSJvdXQiIGluPSJTb3VyY2VHcmFwaGljIiBkeD0iMCIgZHk9IjEiLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSJvdXQiIGluPSJvdXQiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgIDAgMCAwIDAgMCAgMCAwIDAgMCAwICAwIDAgMCAwLjQgMCIvPgoJCQk8ZmVHYXVzc2lhbkJsdXIgcmVzdWx0PSJvdXQiIGluPSJvdXQiIHN0ZERldmlhdGlvbj0iMiIvPgoJCQk8ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJvdXQiIG1vZGU9Im5vcm1hbCIgcmVzdWx0PSJkcCIvPgoJCTwvZmlsdGVyPgoJPC9kZWZzPiAKCTxwYXRoIGlkPSJmZy1jbG91ZCIgZmlsdGVyPSJ1cmwoI2YxKSIgZD0iTTYuMyAzNS4xQzQuNyAzNC4yLTAuNCAzMi4zIDEuNCAyNSAzLjEgMTguMSA4LjcgMTkuNSA4LjcgMTkuNSA4LjcgMTkuNSAzLjIgMTQuMSAxMC40IDYuOCAxNi45IDAuMiAyMy4xIDQuNiAyMy4xIDQuNiAyMy4xIDQuNiAzMC0xLjcgMzUuMiAyLjQgNDQuNiA5LjcgNDIuOCAyNS4zIDQyLjggMjUuMyA0Mi44IDI1LjMgNDggMjIuNiA0OS44IDI4LjYgNTEgMzIuNyA0NiAzNS44IDQyLjggMzYuNyAzOS43IDM3LjUgOC45IDM2LjYgNi4zIDM1LjFaIiBzdHJva2U9IiNjY2NjY2MiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4=);
+}
+.cloud--small{ top:65px;
+  -webkit-animation-duration:6s;
+     -moz-animation-duration:6s;
+   	      animation-duration:6s;
+
+  -webkit-transform: scale(0.5);
+     -moz-transform: scale(0.5); 
+          transform: scale(0.5);
+}
+.cloud--medium{ top:95px;
+  -webkit-animation-duration:5s;
+     -moz-animation-duration:5s;
+          animation-duration:5s;
+
+  -webkit-animation-delay:1s;
+     -moz-animation-delay:1s;
+          animation-delay:1s;
+
+  -webkit-transform: scale(0.7);
+     -moz-transform: scale(0.7); 
+          transform: scale(0.7); 
+}
+.cloud--large{ top:95px;
+  -webkit-animation-duration:4.5s;
+     -moz-animation-duration:4.5s;
+          animation-duration:4.5s;
+
+  -webkit-animation-delay:2.5s;
+     -moz-animation-delay:2.5s;
+          animation-delay:2.5s;
+  
+  -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8); 
+          transform: scale(0.8);
+}
+
+/*飞机*/
+@keyframes anim-plane{ 
+  to{
+    transform:translateY(95px);
+  }    
+}
+@-webkit-keyframes anim-plane{ 
+  to{
+    -webkit-transform:translateY(95px);
+  }    
+}
+@-moz-keyframes anim-plane{ 
+  to{
+    -moz-transform:translateY(95px);
+  }    
+}
+
+/*云*/
+@keyframes fade{
+  0%{ opacity: 0;}
+  10%{ opacity: 1;}
+  90%{ opacity:1;}
+  100%{ opacity:0;}
+}
+@-webkit-keyframes fade{
+  0%{ opacity: 0;}
+  10%{ opacity: 1;}
+  90%{ opacity:1;}
+  100%{ opacity:0;}
+}
+@-moz-keyframes fade{
+  0%{ opacity: 0;}
+  10%{ opacity: 1;}
+  90%{ opacity:1;}
+  100%{ opacity:0;}
+}
+
+@keyframes move{  
+  from{ 
+    left:200px; 
+  }
+  to{ 
+    left:0px; 
+  }
+}
+@-webkit-keyframes move{  
+  from{ 
+    left:200px; 
+  }
+  to{ 
+    left:0px; 
+  }
+}
+@-moz-keyframes move{  
+  from{ 
+    left:200px; 
+  }
+  to{ 
+    left:0px; 
+  }
+}
+
+
+/*播放按钮*/
+@-webkit-keyframes video_btnPlay{
+	0%{-webkit-transform: scale(1); opacity: 0.8;}
+	100%{-webkit-transform: scale(2); opacity: 0.3;}
+}
+@-moz-keyframes video_btnPlay{
+	0%{-moz-transform: scale(1); opacity: 0.8;}
+	100%{-moz-transform: scale(2); opacity: 0.3;}
+}
+@keyframes video_btnPlay{
+	0%{transform: scale(1); opacity: 0.8;}
+	100%{transform: scale(2); opacity: 0.3;}
+}

@@ -1,0 +1,27 @@
+body{
+	overflow:hidden;
+}
+
+.page{
+	width:100%;
+	height:100%;
+	position:absolute;
+	text-align:center;
+}
+
+.page-current{
+	z-index:1;
+}
+
+.hide{ display:none;}
+
+.arrow-up{
+	height:auto;
+	width:25px;
+	position:absolute;
+	left:50%;
+	top:92%;
+	margin-left:-12px;
+	z-index:99;
+}
+

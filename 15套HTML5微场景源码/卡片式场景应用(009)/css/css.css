@@ -1,0 +1,86 @@
+/* CSS Document */
+.shou_box{ width:980px; margin:0 auto;}
+.wxx_Effect{ width:980px; float:left; margin-top:20px;}
+.wxx_Effect dl{ width:980px; float:left; list-style:none; margin-top:0; margin-bottom:0;}
+.wxx_Effect dd{ width:228px; background:#fff; border:1px #cdcdcd solid; height:248px; float:left; margin-left:20px;}
+.wxx_Effect dd img{ float:left; margin:10px 0 0 66px; border:0;}
+.wxx_Effect dd span{ width:228px; float:left; text-align:center; line-height:30px; font-family:Microsoft YaHei; font-size:18px; margin-top:20px;}
+.wxx_Effect dd p{ width:190px; float:left; padding:0 0 0 20px; line-height:22px; font-size:14px;}
+
+
+.s_center1{ width:980px; float:left; margin-top:20px;}
+.s_center1_left{ width:282px; float:left; border:1px #cdcdcd solid; background:#ffffff; height:300px;}
+.s_center1_left img{ float:left; border:0;}
+.s_center1_l_anniu{ width:282px; float:left;}
+.s_center1_l_anniu img{ float:left; margin:20px 0 0 66px; border:0;}
+.s_center1_right{ width:208px; float:right;height:302px; overflow:hidden;}
+.s_center1_right img{ width:208px; float:left; border:0; margin-top:19px;}
+
+.s_center1_c{ width:446px; float:left; margin-left:20px;_margin-left:10px;border:1px #cdcdcd solid;height:300px; background:url(images/s_03.jpg) no-repeat left top #f8f8f8; overflow:hidden;}
+.s_center1_c_top{ width:446px; float:left; height:100px;border-bottom:1px #cdcdcd solid;}
+.s_center1_c_top span{ width:446px; float:left; line-height:50px; text-align:center;font-family:Microsoft YaHei; font-size:18px;}
+.s_center1_c_top p{ width:420px; float:left; line-height:20px; font-size:12px; margin-top:0; margin-bottom:0; margin-left:20px;_margin-left:10px;}
+
+.s_center1_c dl{ width:446px; float:left; list-style:none; margin:0; margin-top:15px;}
+.s_center1_c dd{ width:420px; float:left; margin-left:10px;_margin-left:5px; display:block; line-height:30px;}
+.s_center1_c dd p{ width:300px; float:left; font-size:14px;overflow: hidden;text-align: left;text-overflow: ellipsis;white-space: nowrap;}
+.s_center1_c dd span{ width:120px; float:left;font-size:14px; margin:0; text-align:right}
+
+
+.s_center3{ width:978px; float:left; margin-top:20px;border:1px #cdcdcd solid;background:#ffffff; height:240px;}
+.s_center3_a{ width:310px; float:left; margin:20px 0 0 15px;_margin:20px 0 0 7px;border-right:1px #cdcdcd solid;}
+.s_center3_a_top{ width:310px; float:left;}
+.s_center3_a_top span{ width:80px; height:30px; float:left; line-height:30px; font-family:Microsoft YaHei;border-radius: 5px; background:#e25b1e; text-align:center; color:#fff; font-size:14px;}
+.s_center3_a_top p{ width:60px; float:right; font-size:12px; margin:0; line-height:30px;}
+.s_center3_a_top p a{ color:#666666; text-decoration:none;}
+.s_center3_a dl{ width:310px; float:left; list-style:none; margin:0; margin-top:20px; }
+.s_center3_a dd{ width:290px; float:left; line-height:30px; font-size:14px; margin:0;text-indent:15px; overflow:hidden;color:#666666; background:url(images/dian.jpg) no-repeat left center; margin-left:10px;_margin-left:5px;text-align: left;text-overflow: ellipsis;white-space: nowrap;}
+.s_center3_right{ width:310px; float:left;border-left:1px #cdcdcd solid; height:240px;}
+.s_center3_right dl{ width:310px; float:left; list-style:none; margin:0; margin-top:20px; }
+.s_center3_right dd{width:280px; float:left; line-height:30px; font-size:14px; margin:0;text-indent:15px; overflow:hidden; color:#666666;background:url(images/dian.jpg) no-repeat left center;margin-left:30px;_margin-left:15px;}
+
+.s_center4{ width:980px; float:left; margin-top:20px;}
+.s_center4 p{ width:980px; float:left; line-height:30px;font-family:Microsoft YaHei; font-size:16px; text-align:center;}
+.s_center4 p a{ color:#e25b1e;}
+.s_center4_kh{ width:980px; float:left;}
+.s_center4_kh dl{ width:980px; float:left; list-style:none; margin:0;}
+.s_center4_kh dd{ width:122px; float:left;margin:0;border:1px #cdcdcd solid; margin-left:18px;_margin-left:18px; margin-top:15px;}
+
+.s_center4_kh dd img{ float:left;}
+.s_center4_kh dd span{ width:122px; height:24px; line-height:24px; background:#bcbcbc; color:#fff; float:left; text-align:center; font-size:12px;}
+
+.s_center4_b{ width:980px; float:left; margin-top:20px;}
+.s_center4_b p{ width:730px; float:left; margin:0; text-align:left;}
+.s_center4_b span{width:80px; height:30px; float:left; line-height:30px; font-family:Microsoft YaHei;border-radius: 5px; background:#e25b1e; text-align:center; color:#fff; font-size:14px;}
+
+
+
+
+
+.xinjia_sj{ width:978px;float:left; margin-top:20px; border:1px #cdcdcd solid;}
+.xinjia_sj_1{ width:240px; float:left; background:url(images/xinjia_10.jpg) no-repeat left center; height:150px; margin-left:20px;}
+.xinjia_sj_1 span{ width:160px; float:left; background:url(images/xinjia_03.jpg) no-repeat left center;font-family:Microsoft YaHei; font-size:20px; text-indent:30px;margin-left:60px; margin-top:25px;}
+.xinjia_sj_1 p{ width:160px; float:left;font-family:Microsoft YaHei; font-size:14px; margin:0; margin-left:60px;_margin-left:30px; line-height:22px; margin-top:10px;}
+.xinjia_sj_s{ width:50px; float:left; height:150px; background:url(images/xinjia_15.jpg) no-repeat center; margin-left:20px;_margin-left:10px;}
+
+
+.xinjia_sj_2{ width:250px; float:left; background:url(images/xinjia_17.jpg) no-repeat left center; height:150px; margin-left:30px;}
+.xinjia_sj_2 span{ width:160px; float:left; background:url(images/xinjia_05.jpg) no-repeat left center;font-family:Microsoft YaHei; font-size:20px; text-indent:30px;margin-left:75px; margin-top:25px;}
+.xinjia_sj_2 p{ width:160px; float:left;font-family:Microsoft YaHei; font-size:14px; margin:0; margin-left:75px;_margin-left:37px; line-height:22px; margin-top:10px;}
+
+.xinjia_sj_3{ width:250px; float:left; background:url(images/xinjia_20.jpg) no-repeat left center; height:150px; margin-left:30px;}
+.xinjia_sj_3 span{ width:160px; float:left; background:url(images/xinjia_07.jpg) no-repeat left center;font-family:Microsoft YaHei; font-size:20px; text-indent:30px;margin-left:75px; margin-top:25px;}
+.xinjia_sj_3 p{ width:160px; float:left;font-family:Microsoft YaHei; font-size:14px; margin:0; margin-left:75px;_margin-left:37px; line-height:22px; margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
