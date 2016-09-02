@@ -1,0 +1,288 @@
+body,
+html,
+.swiper-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url(../img/back.jpg) no-repeat;
+}
+
+img {
+    display: block;
+}
+
+#pic_1 {
+    width: 6.39rem;
+    height: 0.02rem;
+    margin-top: 3.7rem;
+}
+
+#pic_2 {
+    width: 4.3rem;
+    height: 1.29rem;
+    margin-top: -1.32rem;
+    margin-left: 1.05rem;
+}
+
+#pic_3 {
+    width: 1.38rem;
+    height: 0.1rem;
+    margin: 0.16rem 2.52rem 0.30rem;
+}
+
+#pic_4 {
+    width: 4.49rem;
+    height: 0.57rem;
+    margin: 0 1rem 0.29rem;
+}
+
+#pic_5 {
+    width: 2.81rem;
+    height: 0.28rem;
+    margin: 0 1.81rem 0.30rem;
+}
+
+#pic_6 {
+    width: 0.24rem;
+    height: 0.25rem;
+    margin-top: -0.55rem;
+    margin-left: 1.40rem;
+}
+
+#pic_7 {
+    width: 0.24rem;
+    height: 0.25rem;
+    margin-top: -0.27rem;
+    margin-left: 4.80rem;
+}
+
+#pic_8 {
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top: 2.27rem;
+    margin-left: 2.88rem;
+}
+
+#pic_9 {
+    width: 1.64rem;
+    height: 0.43rem;
+    margin-top: 0.99rem;
+    margin-left: 2.39rem;
+}
+
+#pic_10 {
+    width: 0.83rem;
+    height: 0.55rem;
+    margin-top: 1.29rem;
+    margin-left: 2.79rem;
+}
+
+#pic_11 {
+    width: 0.54rem;
+    height: 5.64rem;
+    margin-top: 0.02rem;
+    margin-left: 2.93rem;
+}
+
+#pic_12 {
+    width: 0.83rem;
+    height: 0.55rem;
+    margin-top: 0.02rem;
+    margin-left: 2.79rem;
+}
+
+#pic_13 {
+    width: 1.01rem;
+    height: 3.70rem;
+    margin-top: -5.98rem;
+    margin-left: 4.2rem;
+}
+
+#pic_14 {
+    width: 0.59rem;
+    height: 3.84rem;
+    margin-top: -3.7rem;
+    margin-left: 1.66rem;
+}
+
+#pic_15 {
+    width: 0.38rem;
+    height: 0.38rem;
+    margin-top: 1rem;
+    margin-left: 3.33rem;
+}
+
+#pic_16 {
+    width: 2.57rem;
+    height: 1.02rem;
+    margin-top: 1.1rem;
+    margin-left: 1.88rem;
+}
+
+#pic_17 {
+    width: 1.21rem;
+    height: 0.37rem;
+    margin-top: 0.3rem;
+    margin-left: 2.59rem;
+}
+
+#pic_18 {
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top: -7.75rem;
+    margin-left: 4.68rem;
+}
+
+#pic_19 {
+    width: 1.78rem;
+    height: 0.66rem;
+    margin-top: 1.32rem;
+    margin-left: 2.3rem;
+}
+
+#pic_20 {
+    width: 1.02rem;
+    height: 3.32rem;
+    margin-top: 0.3rem;
+    margin-left: 2.56rem;
+}
+
+#pic_21 {
+    width: 0.18rem;
+    height: 3.07rem;
+    margin-top: -2.5rem;
+    margin-left: 1.93rem;
+}
+
+#pic_22 {
+    width: 0.11rem;
+    height: 1.28rem;
+    margin-top: -3.07rem;
+    margin-left: 2.21rem;
+}
+
+#pic_23 {
+    width: 0.45rem;
+    height: 2.11rem;
+    margin-top: -1.8rem;
+    margin-left: 4.1rem;
+}
+
+#pic_24 {
+    width: 1.43rem;
+    height: 2.24rem;
+    margin-top: 1.8rem;
+    margin-left: 2.48rem;
+}
+
+#pic_25 {
+    width: 1.64rem;
+    height: 0.43rem;
+    margin-top: 0.3rem;
+    margin-left: 2.39rem;
+}
+
+#pic_26 {
+    width: 2.81rem;
+    height: 0.28rem;
+    margin-top: 0.16rem;
+    margin-left: 2rem;
+}
+
+#pic_27 {
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top: -7.36rem;
+    margin-left: 3.05rem;
+}
+
+#pic_28 {
+    width: 1.78rem;
+    height: 0.66rem;
+    margin-top: 1.32rem;
+    margin-left: 2.3rem;
+}
+
+#pic_29 {
+    width: 1.01rem;
+    height: 4.04rem;
+    margin-top: 0.3rem;
+    margin-left: 2.73rem;
+}
+
+#pic_30 {
+    width: 0.18rem;
+    height: 2.26rem;
+    margin-top: -2.9rem;
+    margin-left: 2.25rem;
+}
+
+#pic_31 {
+    width: 0.11rem;
+    height: 1.28rem;
+    margin-top: -2.25rem;
+    margin-left: 2.54rem;
+}
+
+#pic_32 {
+    width: 0.46rem;
+    height: 2.11rem;
+    margin-top: -1.8rem;
+    margin-left: 4.1rem;
+}
+
+#pic_33 {
+    width: 6.21rem;
+    height: 1.71rem;
+    margin-top: 1.7rem;
+    margin-left: 0.25rem;
+}
+
+#pic_34 {
+    width: 1.07rem;
+    height: 0.72rem;
+    margin-top: -2.4rem;
+    margin-left: 1.38rem;
+}
+
+#pic_35 {
+    width: 1.65rem;
+    height: 0.84rem;
+    margin-top: 0.5rem;
+    margin-left: 1.7rem;
+}
+
+#pic_36 {
+    width: 1.2rem;
+    height: 0.89rem;
+    margin-top: -1.8rem;
+    margin-left: 3.6rem;
+}
+
+#pic_37 {
+    width: 1.36rem;
+    height: 0.95rem;
+    margin-top: -1.9rem;
+    margin-left: 4.8rem;
+}
+
+#pic_38 {
+    width: 1.64rem;
+    height: 0.43rem;
+    margin-top: 2.62rem;
+    margin-left: 2.39rem;
+}
+
+#pic_39 {
+    width: 2.81rem;
+    height: 0.28rem;
+    margin-top: 0.16rem;
+    margin-left: 2rem;
+}
+
+#pic_40 {
+    width: 0.66rem;
+    height: 0.66rem;
+    margin-top: -7.19rem;
+    margin-left: 3.17rem;
+}
